@@ -60,7 +60,7 @@
     "@storybook/react": "^5.2.8",
     "@testing-library/react": "^9.3.2",
     "babel-loader": "^8.0.6",
-    "jest": "^24.9.0",
+    "jest": "24.8.0",
     "jest-image-snapshot": "^2.11.1",
     "jest-puppeteer": "^4.3.0",
     "puppeteer": "^2.0.0",
