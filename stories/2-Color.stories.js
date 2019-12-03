@@ -2,45 +2,48 @@ import React from "react";
 import Color from "../src/components/Colors/index";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
-
+import {ThemeProvider} from 'styled-components'
+import theme from '../src/components/theme'
 export const primary = ()=>(
-    <>
-    <Color background="primaryLight" label="primary-light"  /><br/>
-    <Color background="primary" label="primary"  /><br/>
-    <Color background="primaryDark" label="primary-dark" /><br/>
-    <Color background="primaryDarker" label="primary-darker" color="secondary" />
-    </>
+
+    <ThemeProvider theme={theme}>
+
+    <Color primaryLight label="primary-light"  /><br/>
+    <Color primary label="primary"  /><br/>
+    <Color primaryDark label="primary-dark" /><br/>
+    <Color label="primary-darker" primaryDarker secondaryColor/>
+    </ThemeProvider>
 
 )
 export const secondary = ()=>(
-    <>
-    <Color background="secondaryLighter" label="secondary-lighter" /><br/>
-    <Color background="secondaryLight" label="secondary-light" /><br/>
-    <Color background="secondary" label="secondary" /><br/>
-    <Color background="secondaryDark" label="secondary-dark" /><br/>
-    <Color background="secondaryDarker" label="secondary-darker" color="secondary" /><br/>
-    </>)
+    <ThemeProvider theme={theme}>
+    <Color secondaryLighter label="secondary-lighter" /><br/>
+    <Color secondaryLight label="secondary-light" /><br/>
+    <Color secondary label="secondary" /><br/>
+    <Color secondaryDark label="secondary-dark" /><br/>
+    <Color secondaryDarker label="secondary-darker" color="secondary" /><br/>
+    </ThemeProvider>)
 export const warning = ()=>(
-    <>
-     <Color background="warning" label="warning" /><br/>
-     <Color background="warningDark" label="warning-dark" /><br/>
-     <Color background="warningDarker" label="warning-darker" /><br/>
-     </>
+    <ThemeProvider theme={theme}>
+     <Color warning label="warning" /><br/>
+     <Color warningDark label="warning-dark" /><br/>
+     <Color warningDarker label="warning-darker" /><br/>
+     </ThemeProvider>
      
      )
 export const danger = ()=>(
-    <>
-     <Color background="danger" label="danger" /><br/>
-     <Color background="dangerDark" label="danger-dark" /><br/>
-     <Color background="dangerDarker" label="danger-darker" /><br/>
-     </>
+    <ThemeProvider theme={theme}>
+     <Color danger label="danger" /><br/>
+     <Color dangerDark label="danger-dark" /><br/>
+     <Color dangerDarker label="danger-darker" /><br/>
+     </ThemeProvider>
      )
 export const success = ()=>(
-    <>
-     <Color background="success" label="success" /><br/>
-     <Color background="successDark" label="success-dark" /><br/>
-     <Color background="successDarker" label="success-darker" />
-     </>)
+    <ThemeProvider theme={theme}>
+     <Color success label="success" /><br/>
+     <Color successDark label="success-dark" /><br/>
+     <Color successDarker label="success-darker" />
+     </ThemeProvider>)
 export default {
     title:"color",
     decorators: [withKnobs]
