@@ -45,6 +45,6 @@ export const success = ()=>(
      <Color successDarker label="success-darker" />
      </ThemeProvider>)
 export default {
-    title:"color",
+    title:"Color",
     decorators: [withKnobs]
 }
