@@ -2,12 +2,14 @@
 
 exports[`renders correctly where background is set 1`] = `
 <div
-  className="sc-bdVaJa DiWAd"
-/>
+  className="sc-bdVaJa gXMiLR"
+>
+  primary
+</div>
 `;
 
 exports[`renders correctly where there is no background 1`] = `
 <div
-  className="sc-bdVaJa kEFwkw"
+  className="sc-bdVaJa gXMiLR"
 />
 `;

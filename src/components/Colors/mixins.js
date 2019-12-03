@@ -6,7 +6,7 @@ const backgroundColor = ({ theme, ...props }) => {
     background-color:${theme.colors[color[0]]||theme.colors.primary}
 `;
 };
-export const color = ({theme, ...props}) =>{
+export const color = ({theme={}, ...props}) =>{
     const colorSet = Object.keys(theme.colors);
 
     let color = Object.keys(props).filter(color =>{
@@ -18,10 +18,9 @@ export const color = ({theme, ...props}) =>{
             return false
         }
         });          
-        color=color[0].split("Color")[0] || "Primary"
-   
+        color=color[0]?color[0].split("Color")[0]: "defaultColor"
    return`
-   color:${theme.colors[color]||"red"}
+   color:${theme.colors[color]}
    `
 }
 export default backgroundColor

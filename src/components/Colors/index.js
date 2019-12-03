@@ -8,6 +8,7 @@ import backgroundColor,{color} from "./mixins"
 let Defin = Styled.div`
     width:"30px";
     ${backgroundColor}
+    ${color}
 `;
 /**
  * This component renders color guide for the application 
