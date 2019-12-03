@@ -1,4 +1,4 @@
-
+// mixin for setting background color
 const backgroundColor = ({ theme, ...props }) => {
     const colorSet = Object.keys(theme.colors);
   const color = Object.keys(props).filter(color => colorSet.includes(color));  
@@ -6,6 +6,8 @@ const backgroundColor = ({ theme, ...props }) => {
     background-color:${theme.colors[color[0]]||theme.colors.primary}
 `;
 };
+
+//mixin for setting colors
 export const color = ({theme={}, ...props}) =>{
     const colorSet = Object.keys(theme.colors);
 

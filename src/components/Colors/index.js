@@ -1,6 +1,3 @@
-//imports all color constants from color file
-// import * as colors from "./color"
-
 import Styled from "styled-components"
 import React from 'react'
 import backgroundColor,{color} from "./mixins"

@@ -21,7 +21,7 @@ export const secondary = ()=>(
     <Color secondaryLight label="secondary-light" /><br/>
     <Color secondary label="secondary" /><br/>
     <Color secondaryDark label="secondary-dark" /><br/>
-    <Color secondaryDarker label="secondary-darker" color="secondary" /><br/>
+    <Color secondaryDarker label="secondary-darker" secondaryColor /><br/>
     </ThemeProvider>)
 export const warning = ()=>(
     <ThemeProvider theme={theme}>
