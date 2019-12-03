@@ -1,5 +1,5 @@
-import * as colors from "../components/Colors/color";
+import * as colors from "./color/color";
 const theme = {
-  colors,
+  colors
 };
 export default theme;
