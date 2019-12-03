@@ -17,31 +17,3 @@ export const successDarker = "#0AD00A"
 export const warning = "#FFDA58"
 export const warningDark= "#FFD33A"
 export const warningDarker = "#FFC600"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
