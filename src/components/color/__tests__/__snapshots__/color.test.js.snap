@@ -2,7 +2,7 @@
 
 exports[`renders correctly where background is set 1`] = `
 <div
-  className="sc-bdVaJa gXMiLR"
+  className="sc-bdVaJa llNAVG"
 >
   primary
 </div>
@@ -10,6 +10,6 @@ exports[`renders correctly where background is set 1`] = `
 
 exports[`renders correctly where there is no background 1`] = `
 <div
-  className="sc-bdVaJa gXMiLR"
+  className="sc-bdVaJa llNAVG"
 />
 `;
