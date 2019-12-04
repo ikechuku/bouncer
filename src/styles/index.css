@@ -21,8 +21,8 @@ code {
  *    without disabling user zoom.
  */
 html {
-  font-family: sans-serif;
-  font-size: 90%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
