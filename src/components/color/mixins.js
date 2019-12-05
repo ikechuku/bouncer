@@ -3,7 +3,7 @@ const backgroundColor = ({ theme, ...props }) => {
   const colorSet = Object.keys(theme.colors);
   const color = Object.keys(props).filter(color => colorSet.includes(color));
   return `
-    background-color:${theme.colors[color[0]] || theme.colors.primary}
+    background-color:${theme.colors[color[0]] || "none"}
 `;
 };
 
@@ -24,4 +24,5 @@ export const color = ({ theme = {}, ...props }) => {
    color:${theme.colors[color]}
    `;
 };
+
 export default backgroundColor;
