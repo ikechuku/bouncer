@@ -8,6 +8,7 @@ const Text = Styled.p`
     ${lineHeight}
     ${letterSpacing}
     ${color}
+    font-family: 'Open Sans', sans-serif;
 `;
   
 export default Text;

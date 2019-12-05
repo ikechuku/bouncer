@@ -3,212 +3,210 @@ import Styled, { ThemeProvider } from "styled-components";
 import theme from "../src/components/theme";
 import Breadcrumb from "../src/components/breadcrumb";
 import { withKnobs } from "@storybook/addon-knobs";
-import { color } from "../src/components/color/mixins";
-import { fontSize } from "../src/components/text/mixins";
-const P = Styled.p`
-    ${color}
-    ${fontSize}
+import Text from '../src/components/text'
+const Link = Styled(Text)`
+text-decoration:none;
     padding:0 0.3rem 0 0.3rem;
 `;
 
 export const primary = () => (
   <ThemeProvider theme={theme}>
     <Breadcrumb primaryLight>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
-        Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
+        product
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb primary>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb primaryDark>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb primaryDarker>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor xSmall>
+      </Link>
+      <Link secondaryLightColor xSmall>
         Headphones
-      </P>
+      </Link>
     </Breadcrumb>
   </ThemeProvider>
 );
 export const danger = () => (
   <ThemeProvider theme={theme}>
     <Breadcrumb danger>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb dangerDark>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb dangerDarker>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
   </ThemeProvider>
 );
 export const secondary = () => (
   <ThemeProvider theme={theme}>
     <Breadcrumb secondary>
-      <P small>Home</P>
-      <P secondaryDarkColor medium>
+      <Link small as="a" href="#">Home</Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P small>Product</P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link small as="a" href="#">Product</Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P xSmall>Headphones</P>
+      </Link>
+      <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb secondaryDark>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb secondaryDarker>
-      <P secondaryLightColor small>
+      <Link secondaryLightColor small as="a" href="#">
         Home
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor small>
+      </Link>
+      <Link secondaryLightColor small as="a" href="#">
         Product
-      </P>
-      <P secondaryDarkColor medium>
+      </Link>
+      <Link secondaryDarkColor medium>
         /
-      </P>
-      <P secondaryLightColor xSmall>
+      </Link>
+      <Link secondaryLightColor xSmall>
         Headphones
-      </P>
+      </Link>
     </Breadcrumb>
   </ThemeProvider>
 );
 export const warning = () => (
   <ThemeProvider theme={theme}>
     <Breadcrumb warning>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb warningDark>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb warningDarker>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
   </ThemeProvider>
 );
 export const success = () => (
   <ThemeProvider theme={theme}>
     <Breadcrumb success>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb successDark>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
     <br />
     <Breadcrumb successDarker>
-      <P small>Home</P>
-      <P medium>/</P>
-      <P small>Product</P> <P medium>/</P> <P xSmall>Headphones</P>
+      <Link small as="a" href="#">Home</Link>
+      <Link medium>/</Link>
+      <Link small as="a" href="#">Product</Link> <Link medium>/</Link> <Link xSmall>Headphones</Link>
     </Breadcrumb>
   </ThemeProvider>
 );
