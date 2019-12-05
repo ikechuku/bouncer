@@ -20,6 +20,7 @@ export const warningDarker = "#FFC600";
 export const defaultColor = "#000000";
 // colors for buttons
 export const dark = "#22262A";
+export const darkDarker = "#808080";
 export const transparent = "white";
 export const primaryInverse = "#EAF5FF";
 export const dangerInverse = "#FFECEE";
