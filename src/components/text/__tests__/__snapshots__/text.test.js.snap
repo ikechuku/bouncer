@@ -2,7 +2,7 @@
 
 exports[`renders correctly where fline height is set 1`] = `
 <p
-  className="sc-bdVaJa eFvPKX"
+  className="sc-bdVaJa ieptdn"
 >
   Hello
 </p>
@@ -10,7 +10,7 @@ exports[`renders correctly where fline height is set 1`] = `
 
 exports[`renders correctly where font weight is set 1`] = `
 <p
-  className="sc-bdVaJa jUhhxi"
+  className="sc-bdVaJa fAPgYf"
 >
   Hello
 </p>
@@ -18,7 +18,7 @@ exports[`renders correctly where font weight is set 1`] = `
 
 exports[`renders correctly where letter spacing is set 1`] = `
 <p
-  className="sc-bdVaJa glLzjR"
+  className="sc-bdVaJa gjHahq"
 >
   Hello
 </p>
@@ -26,7 +26,7 @@ exports[`renders correctly where letter spacing is set 1`] = `
 
 exports[`renders correctly where only font size is set 1`] = `
 <p
-  className="sc-bdVaJa elzfTL"
+  className="sc-bdVaJa fvIAY"
 >
   hello
 </p>
