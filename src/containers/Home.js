@@ -3,10 +3,9 @@ import Styled, { ThemeProvider } from "styled-components";
 
 import theme from "../components/theme";
 import backgroundColor, { color } from "../components/color/mixins";
-import Button from "../components/button";
-import Counter from "../components/form/counter"
-import Pagination from "../components/paginate";
-
+import Breadcrumb from "../components/breadcrumb";
+import Header from "../components/header"
+import Navbar from "../components/navbar";
 
 let H1 = Styled.h1`
     ${backgroundColor}
