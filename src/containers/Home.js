@@ -4,6 +4,8 @@ import theme from "../components/theme";
 import backgroundColor, { color } from "../components/color/mixins";
 import Button from "../components/button";
 import Counter from "../components/form/counter"
+import Pagination from "../components/paginate";
+
 
 let H1 = Styled.h1`
     ${backgroundColor}
@@ -11,6 +13,7 @@ let H1 = Styled.h1`
 `;
 
 const App = () => (
+
   <ThemeProvider theme={theme}>
     <br />
     <H1 danger successColor>
@@ -23,6 +26,10 @@ const App = () => (
       CLick
     </Button>
     <Counter count={0}/>
+    
+
+    <Pagination />
+
   </ThemeProvider>
 );
 
