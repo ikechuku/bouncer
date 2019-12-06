@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 <label>
   <br />
   <select
-    className="sc-bdVaJa dRmzbU"
+    className="sc-bdVaJa jssoht"
     list={Array []}
   >
     <option
