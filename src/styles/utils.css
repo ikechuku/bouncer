@@ -8,7 +8,7 @@
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
-  }
+  } 
 }
 @media (min-width: 992px) {
   .container {
@@ -169,6 +169,9 @@ a{
 }
 .pl-5{
     padding-left: 1.75rem !important;
+}
+.pl-6{
+    padding-left: 2rem !important;
 }
 
 .p-0{
