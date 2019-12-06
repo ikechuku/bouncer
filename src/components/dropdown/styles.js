@@ -1,7 +1,7 @@
 import Styled from "styled-components";
-import backgroundColor, { color } from '../color/mixins';
+import backgroundColor from '../color/mixins';
 import Text from '../text'
-
+import theme from '../theme'
 export const DropWrapper = Styled.div`
 
 width: 50rem;
@@ -22,10 +22,11 @@ export const Links = Styled(Text)`
     padding:0.2rem;
     text-decoration:none;
     &:hover{
-        ${color}
+        color:${theme.colors.primaryDark}
     }
 
 `
 export const ItemWrapper = Styled.div`
 height:100%;
+padding-bottom:1rem;
 `

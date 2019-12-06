@@ -11,7 +11,7 @@ function Header({ ...props }) {
     setSearch(!search);
   };
   return (
-    <Head {...props}>
+    <Head {...props} data-testid="headerId">
       <div className="container d-flex justify-content-between flex-wrap">
         <div className="d-flex">
           <SelectGroup list={language} sm ></SelectGroup>
@@ -37,7 +37,7 @@ function Header({ ...props }) {
           
           
           <div className="search-icons cursor">
-            <Search search={search} onClick={toggleSearch} />
+            <Search onClick={toggleSearch} />
           </div>
         </div>
       </div>

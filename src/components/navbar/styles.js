@@ -1,15 +1,16 @@
 import Styled from 'styled-components'
-import { color } from '../color/mixins'
 import { Link} from 'react-router-dom'
+import theme from '../theme'
 export const Links = Styled(Link)`
-    /* ${color} */
     text-decoration:none;
+    background:none;
+    border:none
     padding:1rem;
     &:hover{
-        ${color};
+        color:${theme.colors.primaryDark}
     }
     &:focus{
-        ${color};
+        color:${theme.colors.primaryDark}
     }
 `
 
@@ -25,10 +26,12 @@ export const StoreDropdown = Styled.div`
 export const Store = Styled.li`
 position:relative;
 list-style:none;
+
 &:hover{
     ${StoreDropdown}{
         visibility:visible;
         opacity:1;
-    }
+    },
+    color:${theme.colors.primaryDark}  
 }
 `;

@@ -1,5 +1,4 @@
 import React from "react";
-// import Dropdown from './dropdown'
 import { BrowserRouter as Router } from "react-router-dom";
 import Text from "../text";
 import { Links, Store, StoreDropdown } from "./styles";
@@ -8,16 +7,16 @@ import Dropdown from "../dropdown";
 function Navbar() {
   let navigations = ["IPHONE", "IPAD", "MACBOOK", "ACCESSORIES"];
   return (
-    <div className="d-flex align-items-center flex-column">
+    <div className="d-flex align-items-center flex-column"data-testid="navbarId">
       <Text dangerDarkerColor bold>
         BOUNCER
       </Text>
       <div className="d-flex justify-content-center flex-wrap">
         <Router>
-          <Links primaryColor to="/">
+          <Links to="/" as="button">
             HOME
           </Links>
-          <Links primaryColor to="/">
+          <Links  to="/" as="button">
             <Store>
               STORE
               <StoreDropdown>
@@ -26,7 +25,7 @@ function Navbar() {
             </Store>
           </Links>
           {navigations.map((element, key) => (
-            <Links primaryColor key={key} to={`/${element}`}>
+            <Links key={key} to={`/${element}`} as="button">
               {element}
             </Links>
           ))}
