@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaUserAlt, FaShoppingBasket} from "react-icons/fa";
-import "./styles.css";
 import { Head, Pricing, Links, Go, Search } from "./styles";
 import {BrowserRouter as Router} from "react-router-dom"
 function Header({ ...props }) {
