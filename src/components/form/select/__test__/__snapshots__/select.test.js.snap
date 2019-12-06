@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<label>
+  <br />
+  <select
+    className="sc-bdVaJa hmlxjg"
+    list={Array []}
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      Select
+    </option>
+  </select>
+</label>
+`;

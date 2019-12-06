@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa fBEhyh"
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    className="sc-htpNat eUTAqn"
+    type="checkbox"
+  />
+  <div
+    checked={false}
+    className="sc-bxivhb bCOqAG"
+  >
+    <svg
+      className="sc-bwzfXH bkYyAD"
+      viewBox="0 0 24 24"
+    >
+      <polyline
+        points="20 6 9 17 4 12"
+      />
+    </svg>
+  </div>
+</div>
+`;
