@@ -13,9 +13,11 @@ const CheckGroup = ({checked,handleClick,...props}) => {
   return (
     <Span>
       <Label htmlFor="checkbox" {...props}>{props.label}</Label>
-      <CheckboxContainer onClick={handleClick} id="checkbox">
+      <CheckboxContainer id="checkbox" >
         <HiddenCheckbox
           checked={checked}
+          data-testid='box'
+          onChange={handleClick}
           {...props}
           aria-label="checkbox"
           aria-required="true"

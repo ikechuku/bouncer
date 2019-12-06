@@ -1,27 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="sc-bdVaJa fBEhyh"
-  onClick={[Function]}
+<span
+  className="sc-htpNat hCtDsA"
 >
-  <input
-    checked={false}
-    className="sc-htpNat eUTAqn"
-    type="checkbox"
+  <label
+    className="sc-bxivhb fVcWOf"
+    htmlFor="checkbox"
   />
   <div
-    checked={false}
-    className="sc-bxivhb bCOqAG"
+    className="sc-bdVaJa bBPEUt"
+    id="checkbox"
   >
-    <svg
-      className="sc-bwzfXH bkYyAD"
-      viewBox="0 0 24 24"
+    <input
+      aria-label="checkbox"
+      aria-required="true"
+      className="sc-ifAKCX MhoXa"
+      data-testid="box"
+      type="checkbox"
+    />
+    <div
+      className="sc-EHOje iMWpYg"
     >
-      <polyline
-        points="20 6 9 17 4 12"
-      />
-    </svg>
+      <svg
+        className="sc-bwzfXH bkYyAD"
+        viewBox="0 0 24 24"
+      >
+        <polyline
+          points="20 6 9 17 4 12"
+        />
+      </svg>
+    </div>
   </div>
-</div>
+</span>
 `;

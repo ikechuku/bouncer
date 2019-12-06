@@ -1,13 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<label>
-  password
-  <br />
+<div
+  className="sc-htpNat dUyMag"
+>
+  <label
+    className="sc-bwzfXH gHjwmv"
+    htmlFor="input"
+  >
+     
+    password
+      
+  </label>
   <input
-    className="sc-bdVaJa lgnPwY"
+    aria-label="input"
+    aria-required="true"
+    className="sc-bdVaJa gbFaYM"
+    id="input"
     label="password"
     type="password"
   />
-</label>
+</div>
 `;

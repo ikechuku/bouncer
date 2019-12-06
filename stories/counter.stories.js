@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { withKnobs } from "@storybook/addon-knobs";
 import { ThemeProvider } from "styled-components";
 import theme from "../src/components/theme";
-import CounterGroup from "../src/components/form/counter";
+import Counter from "../src/components/form/counter";
 
-export const counter = () => (
-  <ThemeProvider theme={theme}>
-   <CounterGroup primaryLigthColor />
-  </ThemeProvider>
-);
+export const Count = () => {
+  const [counter, setCounter] = useState(0);
 
+  return (
+    <ThemeProvider theme={theme}>
+      <Counter counter={counter} setCounter={setCounter} />
+    </ThemeProvider>
+  );
+};
 export default {
   title: "Counter",
   decorators: [withKnobs]

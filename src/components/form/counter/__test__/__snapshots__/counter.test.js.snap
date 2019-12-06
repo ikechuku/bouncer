@@ -2,16 +2,14 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bdVaJa dgoeTd"
+  className="sc-bdVaJa jzSUFq"
 >
   <div
     onClick={[Function]}
   >
     -
   </div>
-  <span>
-    0
-  </span>
+  <span />
   <div
     onClick={[Function]}
   >

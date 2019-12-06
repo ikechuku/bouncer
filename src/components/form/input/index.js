@@ -1,13 +1,16 @@
 import React from "react";
-import Input from "./styles";
+import {Input, Label, Container} from "./styles";
 
 const InputGroup = props => {
   return (
-    <label>
-      {props.label}
-      <br></br>
-      <Input {...props} />
-    </label>
+    <Container>
+    <Label htmlFor="input" > {props.label}  </Label>
+    <Input {...props} 
+    id="input"
+    aria-label="input"
+    aria-required="true"
+    />
+    </Container>
   );
 };
 

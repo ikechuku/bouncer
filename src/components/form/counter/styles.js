@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-
-
-const Counter = styled.div`
+const styledCounter = styled.div`
   background: #f6f7f8;
   width: 116px;
   height: 46px;
@@ -12,11 +10,12 @@ const Counter = styled.div`
   justify-content: space-around;
   padding: 10px;
   font-size: 30px;
-  div{
-  font-size: 20px;
-  cursor: pointer;
-  color: #33a0ff;
-  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+  div {
+    font-size: 20px;
+    cursor: pointer;
+    color: #33a0ff;
+    font-weight: bolder;
   }
 `;
-export default Counter;
+export default styledCounter;

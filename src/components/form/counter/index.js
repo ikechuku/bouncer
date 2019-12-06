@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Counter from "./styles";
+import React from "react";
+import StyledCounter from "./styles";
 
-const CounterGroup = props => {
-  const [counter, setCounter] = useState(0);
+const Counter = ({counter, setCounter,...props}) => {
+  
 
   const handleIncrement = () => {
     setCounter(counter + 1);
@@ -17,12 +17,12 @@ const CounterGroup = props => {
   };
 
   return (
-    <Counter {...props}>
+    <StyledCounter {...props}>
       <div onClick={handleDecrement}>-</div>
       <span>{counter}</span>
       <div onClick={handleIncrement}> + </div>
-    </Counter>
+    </StyledCounter>
   );
 };
 
-export default CounterGroup;
+export default Counter;

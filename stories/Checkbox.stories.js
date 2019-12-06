@@ -6,7 +6,7 @@ import CheckBox from "../src/components/form/checkbox";
 
 export const Example = () => {
   const [checked, setChecked] = useState(false);
-  const handleClick = () => {
+  const handleClick = (e) => {
     setChecked(!checked);
   };
   return (
