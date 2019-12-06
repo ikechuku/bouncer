@@ -8,5 +8,6 @@ const Select = styled.select`
   border: 2px solid #fafafb;
   outline: none;
   border-radius: 4px;
+  width: 100%;
 `;
 export default Select;
