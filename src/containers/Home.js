@@ -16,20 +16,12 @@ const App = () => (
 
   <ThemeProvider theme={theme}>
     <Header secondaryLight xSmall />
+    <Navbar/> 
     <H1 primary successColor>
       Welcome
     </H1>
-    <Button btnInverseDanger btnLarge>
-      CLick
-    </Button>
-    <Button btnTransparentDanger btnLarge>
-      CLick
-    </Button>
-    <Counter count={0}/>
-    
-
-    <Pagination />
-
+    <Breadcrumb secondary primaryColor>Home/index</Breadcrumb>
+   
   </ThemeProvider>
 );
 
