@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { color } from '../color/mixins'
 import { fontSize, fontWeight } from '../text/mixins'
-
+import { Links } from '../text'
+import theme from '../theme'
 export const HR = styled.hr`
 ${color}
 `
@@ -9,6 +10,10 @@ export const Text = styled.p`
 ${fontSize}
 ${color}
 ${fontWeight}
+`
+export const Icons = styled.div`
+margin-top: 30px;
+/* padding-top:0.2rem */
 `
 
 export const Wrapper1 = styled.div`
@@ -36,4 +41,12 @@ export const Logo = styled.img`
     height:auto;
     width:100%;
     margin:14px 0 14px 0;
+`
+
+export const FootLink = styled(Links)`
+    text-decoration:none;
+    &:hover{
+        color:${theme.colors.defaultColor}
+    }
+
 `

@@ -5,19 +5,27 @@ import westernUnion from './images/Western-union.svg'
 import paypal from './images/Paypal.svg'
 import logo from './images/logo.svg'
 import { FaFacebookF as Facebook, FaTwitter as Twitter } from 'react-icons/fa'
-import  {P, Logo, Wrapper1,Img,HR,Social, Text, IconContainer} from './styles'
+import  {P, Logo, Wrapper1,Img,HR,Social, Text, IconContainer, Icons, FootLink} from './styles'
+
 export default function Footer({...props}) {
     const relatedPages = [{title:"About Us",path:"#"},
         {title:"Information",path:"#"},
         {title:"Privacy Policy",path:"#"},
         {title:"Terms & Conditions",path:"#"},]
+    const footerLinks=[
+        {title:"Information"},
+        {title:"Services"},
+        {title:"Extras"},
+        {title:"My Account"},
+        {title:"Useful Links"},
+        {title:"Our Offers"},
+    ]
     return (
         <div data-testid="footerId">
             <HR secondaryLightColor/>
             <div className="container">
         <Wrapper1 className=" d-flex justify-content-around flex-wrap">
             <div className="d-flex flex-column" style={{flexBasis:"33.3%"}}>
-                {/* <Text secondaryDarkColor bold  className="p-0">BOUNCER</Text> */}
                 <Logo src={logo} alt="logo"/>
                 <P xSmall>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</P>
             </div>
@@ -42,50 +50,17 @@ export default function Footer({...props}) {
             
         </Wrapper1>
         <HR secondaryLightColor/>
-        <Wrapper1 className="container">
+        <Wrapper1 className="container pb-4">
             <div className="d-flex justify-content-between flex-wrap">
-                <div className="d-flex flex-column">
-                <Text xSmall bold>Information</Text>
+                {footerLinks.map((footer,key)=>(
+                 <div className="d-flex flex-column" key={key}>
+                <Text xSmall bold>{footer.title}</Text>
                 {relatedPages.map((page,key)=>(
-                  <P  secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
+                  <FootLink  secondaryDarkColor xSmall as="a" href={page.path} key={key} to="/">{page.title}</FootLink>   
                 ))}  
 
-                </div>
-                <div className="d-flex flex-column">
-                <Text xSmall bold>Services</Text>
-                {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
-                ))}    
-
-                </div>
-                <div className="d-flex flex-column">
-                <Text xSmall bold>Extras</Text>
-                {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key} >{page.title}</P>   
-                ))}     
-
-                </div>
-                <div className="d-flex flex-column">
-                <Text xSmall bold>My Account</Text>
-                {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
-                ))}     
-
-                </div>
-                <div className="d-flex flex-column">
-                <Text xSmall bold>Useful Links</Text>
-                {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
-                ))}     
-
-                </div>
-                <div className="d-flex flex-column">
-                <Text xSmall bold>Our Offers</Text>
-                {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
-                ))}     
-
-                </div>
+                </div>   
+                ))}           
             </div>
         </Wrapper1>
 
@@ -94,13 +69,13 @@ export default function Footer({...props}) {
         <HR  secondaryLightColor/>
         <Wrapper1 className="container">
                 <div className="d-flex justify-content-between">
-                    <Text xSmall>© 2018 Ecommerce theme by www.bisenbaev.com</Text>
-                    <div >
+                    <Text xSmall className="mt-16">© 2018 Ecommerce theme by www.bisenbaev.com</Text>
+                    <Icons >
                         <Img src={westernUnion} alt="western union card" srcset=""/>
                         <Img src={mastercard} alt="master card" srcset=""/>
                         <Img src={paypal} alt="paypal card" srcset=""/>
                         <Img src={visa} alt="visa card" srcset=""/>
-                    </div>
+                    </Icons>
                 </div>
         </Wrapper1>
         </div>
