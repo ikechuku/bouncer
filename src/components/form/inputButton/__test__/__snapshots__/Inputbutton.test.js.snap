@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-htpNat izDcxY"
+>
+  <input
+    className="sc-bwzfXH gZAEqU"
+  />
+  <button
+    className="sc-bdVaJa kGcbEl"
+  >
+     Redeem
+  </button>
+</div>
+`;
