@@ -13,7 +13,7 @@ export const Links = Styled(Link)`
     }
 `
 
-export const StoreDropdown = Styled.li`
+export const StoreDropdown = Styled.div`
     position:absolute;
     top:20px;
     visibility: hidden;

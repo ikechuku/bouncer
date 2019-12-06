@@ -4,8 +4,12 @@ import Select from "./styles";
 const SelectGroup = props => {
   return (
     <label>
-      {props.label}
-      <br />
+      {props.label && (
+        <>
+          {props.label}
+          <br />
+        </>
+      )}
       <Select {...props}>
         <option value="" disabled>
           Select
