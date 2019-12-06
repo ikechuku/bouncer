@@ -4,12 +4,13 @@ import visa from './images/visas.svg'
 import westernUnion from './images/Western-union.svg'
 import paypal from './images/Paypal.svg'
 import logo from './images/logo.svg'
-import  {Twitter,Facebook,P, Logo, Wrapper1,Img,HR,Social, Text} from './styles'
+import { FaFacebookF as Facebook, FaTwitter as Twitter } from 'react-icons/fa'
+import  {P, Logo, Wrapper1,Img,HR,Social, Text, IconContainer} from './styles'
 export default function Footer({...props}) {
-    const relatedPages = ["About Us",
-        "Information",
-        "Privacy Policy",
-        "Terms & Conditions",]
+    const relatedPages = [{title:"About Us",path:"#"},
+        {title:"Information",path:"#"},
+        {title:"Privacy Policy",path:"#"},
+        {title:"Terms & Conditions",path:"#"},]
     return (
         <div data-testid="footerId">
             <HR secondaryLightColor/>
@@ -24,8 +25,9 @@ export default function Footer({...props}) {
                 <Text xSmall bold>Follow Us</Text>
                 <P xSmall>Since the 1500s, when an unknown printer took a galley of type and scrambled.</P>
                 <Social className="d-flex jusify-content-evenly">
-                    <Facebook primaryLightColor/>
-                    <Twitter primaryDarkerColor/>
+                   <IconContainer primaryLightColor><Facebook /></IconContainer> 
+                   <IconContainer primaryDarkerColor><Twitter /></IconContainer>
+                    
 
                 </Social>   
 
@@ -45,42 +47,42 @@ export default function Footer({...props}) {
                 <div className="d-flex flex-column">
                 <Text xSmall bold>Information</Text>
                 {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href="#">{page}</P>   
+                  <P  secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
                 ))}  
 
                 </div>
                 <div className="d-flex flex-column">
                 <Text xSmall bold>Services</Text>
                 {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href="#">{page}</P>   
+                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
                 ))}    
 
                 </div>
                 <div className="d-flex flex-column">
                 <Text xSmall bold>Extras</Text>
                 {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href="#">{page}</P>   
+                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key} >{page.title}</P>   
                 ))}     
 
                 </div>
                 <div className="d-flex flex-column">
                 <Text xSmall bold>My Account</Text>
                 {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href="#">{page}</P>   
+                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
                 ))}     
 
                 </div>
                 <div className="d-flex flex-column">
                 <Text xSmall bold>Useful Links</Text>
                 {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href="#">{page}</P>   
+                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
                 ))}     
 
                 </div>
                 <div className="d-flex flex-column">
                 <Text xSmall bold>Our Offers</Text>
                 {relatedPages.map((page,key)=>(
-                  <P secondaryDarkColor xSmall as="a" href="#">{page}</P>   
+                  <P secondaryDarkColor xSmall as="a" href={page.path} key={key}>{page.title}</P>   
                 ))}     
 
                 </div>
