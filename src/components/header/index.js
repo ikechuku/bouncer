@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaUserAlt, FaShoppingBasket} from "react-icons/fa";
 import { Head, Pricing, Links, Go, Search } from "./styles";
 import {BrowserRouter as Router} from "react-router-dom"
+import SelectGroup from '../form/select/index'
 function Header({ ...props }) {
   const [search, setSearch] = useState(false);
   let language = ["EN", "YR", "FR ", "IG"];
@@ -13,18 +14,10 @@ function Header({ ...props }) {
     <Head {...props}>
       <div className="container d-flex justify-content-between flex-wrap">
         <div className="d-flex">
-          <select name="language" id="language">
-            {language.map((element, key) => (
-              <option key={key}>{element}</option>
-            ))}
-          </select>
-          <select name="currency" id="currency">
-            {currency.map((element, key) => (
-              <option key={key}>{element}</option>
-            ))}
-          </select>
+          <SelectGroup list={language} sm ></SelectGroup>
+          <SelectGroup list={currency} sm ></SelectGroup>
         </div>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           
             <div className="profile">
             <Router>
