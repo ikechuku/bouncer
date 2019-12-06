@@ -1,180 +1,179 @@
-import React, { useState } from "react";
+import React from "react";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { ThemeProvider } from "styled-components";
 import theme from "../src/components/theme";
-import ButtonDom from "../src/components/button";
+import Button from "../src/components/button";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
-import Text from "../src/components/text";
 
 export const buttonPrimary = () => (
   <ThemeProvider theme={theme}>
-    <ButtonDom
+    <Button
       btnprimary
       btnSmall
       disabled={boolean(false)}
       onClick={({ target }) => action("button primary")(target)}
     >
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentPrimary btnSmall>
+    <Button btnTransparentPrimary btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInversePrimary btnSmall>
+    <Button btnInversePrimary btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     <br />
     <br />
-    <ButtonDom btnprimary btnLarge>
+    <Button btnprimary btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentPrimary btnLarge>
+    <Button btnTransparentPrimary btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInversePrimary btnLarge>
+    <Button btnInversePrimary btnLarge>
       Click
-    </ButtonDom>
+    </Button>
   </ThemeProvider>
 );
 
 export const buttonDanger = () => (
   <ThemeProvider theme={theme}>
-    <ButtonDom btndanger btnSmall>
+    <Button btndanger btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentDanger btnSmall>
+    <Button btnTransparentDanger btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseDanger btnSmall>
+    <Button btnInverseDanger btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     <br />
     <br />
-    <ButtonDom btndanger btnLarge>
+    <Button btndanger btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentDanger btnLarge>
+    <Button btnTransparentDanger btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseDanger btnLarge>
+    <Button btnInverseDanger btnLarge>
       Click
-    </ButtonDom>
+    </Button>
   </ThemeProvider>
 );
 
 export const buttonSuccess = () => (
   <ThemeProvider theme={theme}>
-    <ButtonDom btnsuccess btnSmall>
+    <Button btnsuccess btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentSuccess btnSmall>
+    <Button btnTransparentSuccess btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseSuccess btnSmall>
+    <Button btnInverseSuccess btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     <br />
     <br />
-    <ButtonDom btnsuccess btnLarge>
+    <Button btnsuccess btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentSuccess btnLarge>
+    <Button btnTransparentSuccess btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseSuccess btnLarge>
+    <Button btnInverseSuccess btnLarge>
       Click
-    </ButtonDom>
+    </Button>
   </ThemeProvider>
 );
 
 export const buttonWarning = () => (
   <ThemeProvider theme={theme}>
-    <ButtonDom btnwarning btnSmall>
+    <Button btnwarning btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentWarning btnSmall>
+    <Button btnTransparentWarning btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseWarning btnSmall>
+    <Button btnInverseWarning btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     <br />
     <br />
-    <ButtonDom btnwarning btnLarge>
+    <Button btnwarning btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentWarning btnLarge>
+    <Button btnTransparentWarning btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseWarning btnLarge>
+    <Button btnInverseWarning btnLarge>
       Click
-    </ButtonDom>
+    </Button>
   </ThemeProvider>
 );
 
 export const buttonDark = () => (
   <ThemeProvider theme={theme}>
-    <ButtonDom btndark btnSmall>
+    <Button btndark btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentDark btnSmall>
+    <Button btnTransparentDark btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseDark btnSmall>
+    <Button btnInverseDark btnSmall>
       Click
-    </ButtonDom>
+    </Button>
     <br />
     <br />
-    <ButtonDom btndark btnLarge>
+    <Button btndark btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnTransparentDark btnLarge>
+    <Button btnTransparentDark btnLarge>
       Click
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInverseDark btnLarge>
+    <Button btnInverseDark btnLarge>
       Click
-    </ButtonDom>
+    </Button>
   </ThemeProvider>
 );
 
 export const buttonIcons = () => (
   <ThemeProvider theme={theme}>
-    <ButtonDom btnInversePrimary btnTiny>
+    <Button btnInversePrimary btnTiny>
       <FaRegHeart />
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInversePrimary btnTiny>
+    <Button btnInversePrimary btnTiny>
       <FiShoppingCart />
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInversePrimary btnLarge>
+    <Button btnInversePrimary btnLarge>
       <FiShoppingCart /> &nbsp; &nbsp; Add to Cart
-    </ButtonDom>
+    </Button>
     &nbsp; &nbsp; &nbsp;
-    <ButtonDom btnInversePrimary btnLarge>
+    <Button btnInversePrimary btnLarge>
       <FaRegHeart /> &nbsp; &nbsp; Add to Favorites
-    </ButtonDom>
+    </Button>
   </ThemeProvider>
 );
 
