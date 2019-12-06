@@ -3,7 +3,6 @@ import Styled, { ThemeProvider } from "styled-components";
 import theme from "../components/theme";
 import backgroundColor, { color } from "../components/color/mixins";
 import ButtonDom from "../components/button";
-import { parsePath } from "history";
 
 let H1 = Styled.h1`
     ${backgroundColor}
@@ -16,10 +15,6 @@ const App = () => (
     <H1 danger successColor>
       Welcome
     </H1>
-    {/* <ButtonDom btnsuccess btnSmall>
-      CLick
-    </ButtonDom> */}
-
     <ButtonDom btnInverseDanger btnLarge>
       CLick
     </ButtonDom>

@@ -25,8 +25,4 @@ ${size}
 ${btnColor}
 ${btnState}
 `;
-// &:hover{
-//     background-color: ${backgroundColor}darker
-// }
-
 export default Button;

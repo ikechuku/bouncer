@@ -44,7 +44,6 @@ export const btnState = ({ theme, ...props }) => {
   const newState = states.filter(state => {
     return state !== false || state !== undefined;
   });
-  // console.log(newState)
 
   let color = newState[0][0] ? newState[0][0].toLowerCase() : "none";
   let btnsTate = newState[0][1];
@@ -57,7 +56,6 @@ export const btnState = ({ theme, ...props }) => {
       background-color: ${theme.colors[color + "Darker"]}
       color:white
     }
-
   `;
   } else {
     return `
@@ -67,7 +65,6 @@ export const btnState = ({ theme, ...props }) => {
       background-color: ${theme.colors[color + "Darker"]}
       color:white
     }
-
   `;
   }
 };
