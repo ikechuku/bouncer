@@ -13,7 +13,6 @@ ${fontWeight}
 `
 export const Icons = styled.div`
 margin-top: 30px;
-/* padding-top:0.2rem */
 `
 
 export const Wrapper1 = styled.div`
