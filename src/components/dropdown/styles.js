@@ -1,6 +1,16 @@
 import Styled from "styled-components";
 import backgroundColor, { color } from '../color/mixins';
 import Text from '../text'
+
+export const DropWrapper = Styled.div`
+
+width: 50rem;
+    height: 100%;
+    box-shadow: 0px 30px 30px 0 rgba(0, 0, 0, 0.1);
+    ${backgroundColor}
+    margin: 20px;
+`
+
 export const Wrapper = Styled.div`
     ${backgroundColor}
     width:100%;
