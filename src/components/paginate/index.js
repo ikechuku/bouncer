@@ -9,7 +9,7 @@ export default function Pagination() {
 
   const handleActive = e => {
     let myState = active.map(item => ({ ...item, status: false }));
-    myState.find(each_item => each_item.id == e.target.innerText).status = true;
+    myState.find(each_item => each_item.id === e.target.innerText).status = true;
     setActive(myState);
 
   };

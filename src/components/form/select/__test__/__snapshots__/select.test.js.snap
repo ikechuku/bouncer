@@ -2,7 +2,6 @@
 
 exports[`renders correctly 1`] = `
 <label>
-  <br />
   <select
     className="sc-bdVaJa jssoht"
     list={Array []}

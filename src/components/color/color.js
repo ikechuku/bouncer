@@ -30,3 +30,4 @@ export const darkInverse = "#F6F7F8";
 export const white ="#FFFFFF"
 
 
+export const light = white
