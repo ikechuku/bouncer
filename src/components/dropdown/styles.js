@@ -1,5 +1,6 @@
 import Styled from "styled-components";
 import backgroundColor, { color } from '../color/mixins';
+import Text from '../text'
 export const Wrapper = Styled.div`
     ${backgroundColor}
     width:100%;
