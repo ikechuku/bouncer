@@ -27,3 +27,6 @@ export const dangerInverse = "#FFECEE";
 export const successInverse = "#E6FAE6";
 export const warningInverse = "#FFF9E5";
 export const darkInverse = "#F6F7F8";
+export const white ="#FFFFFF"
+
+
