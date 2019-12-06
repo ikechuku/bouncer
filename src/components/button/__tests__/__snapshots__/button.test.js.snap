@@ -2,66 +2,66 @@
 
 exports[`renders correctly where background is set Black 1`] = `
 <button
-  className="sc-bdVaJa jlfIJs"
+  className="sc-bdVaJa eCAzmP"
 />
 `;
 
 exports[`renders correctly where background is set Danger 1`] = `
 <button
-  className="sc-bdVaJa pckHw"
+  className="sc-bdVaJa kgRhys"
 />
 `;
 
 exports[`renders correctly where background is set Success 1`] = `
 <button
-  className="sc-bdVaJa jNFceP"
+  className="sc-bdVaJa jnlnVZ"
 />
 `;
 
 exports[`renders correctly where background is set Warning 1`] = `
 <button
-  className="sc-bdVaJa iUWwcU"
+  className="sc-bdVaJa cueqap"
 />
 `;
 
 exports[`renders correctly where background is set primary 1`] = `
 <button
-  className="sc-bdVaJa hsUqXD"
+  className="sc-bdVaJa hhpwih"
 />
 `;
 
 exports[`renders correctly where btn size is set to Large 1`] = `
 <button
-  className="sc-bdVaJa glIWXK"
+  className="sc-bdVaJa fZhNrR"
 />
 `;
 
 exports[`renders correctly where btn size is set to Tiny 1`] = `
 <button
-  className="sc-bdVaJa bBWKPT"
+  className="sc-bdVaJa gLnqv"
 />
 `;
 
 exports[`renders correctly where btn size is set to small 1`] = `
 <button
-  className="sc-bdVaJa fHBdVf"
+  className="sc-bdVaJa hwilJy"
 />
 `;
 
 exports[`renders correctly where inverse is set  1`] = `
 <button
-  className="sc-bdVaJa hrjGMq"
+  className="sc-bdVaJa enqqpa"
 />
 `;
 
 exports[`renders correctly where transparency is set 1`] = `
 <button
-  className="sc-bdVaJa dgmOJf"
+  className="sc-bdVaJa kXpGCg"
 />
 `;
 
 exports[`renders the default correctly when no props are passed 1`] = `
 <button
-  className="sc-bdVaJa lfJEGU"
+  className="sc-bdVaJa hnVdPk"
 />
 `;
