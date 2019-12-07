@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Text from "../text";
-import { Links, Store, StoreDropdown } from "./styles";
+import { Links, Store, StoreDropdown, Ul } from "./styles";
 import Dropdown from "../dropdown";
+
+
 
 function Navbar() {
   let navigations = ["IPHONE", "IPAD", "MACBOOK", "ACCESSORIES"];
@@ -17,12 +19,15 @@ function Navbar() {
             HOME
           </Links>
           <Links  to="/" as="button">
-            <Store>
+            <Ul>
+              <Store>
               STORE
               <StoreDropdown>
                 <Dropdown />
               </StoreDropdown>
             </Store>
+            </Ul>
+            
           </Links>
           {navigations.map((element, key) => (
             <Links key={key} to={`/${element}`} as="button">

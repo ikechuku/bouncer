@@ -35,3 +35,8 @@ list-style:none;
     color:${theme.colors.primaryDark}  
 }
 `;
+
+export const Ul = Styled.ul`
+padding:0;
+
+`
