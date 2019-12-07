@@ -1,3 +1,4 @@
+export const ltSpacing0 = "0.4px"
 export const ltSpacing1 = "0.75px"
 export const ltSpacing2 = "0.9px"
 export const ltSpacing3 = "1.2px"
