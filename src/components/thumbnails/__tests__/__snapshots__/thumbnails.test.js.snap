@@ -10,9 +10,7 @@ Array [
     >
       <div
         className="sc-gzVnrw bQwQxk"
-      >
-        Hot
-      </div>
+      />
       <div
         className="imageContainer"
       >
@@ -26,11 +24,11 @@ Array [
     <div
       className="textContainer"
     >
-      <h1
+      <p
         className="sc-bxivhb fEJIDn stockName"
       >
         Apple Macbook Pro
-      </h1>
+      </p>
       <div
         className="d-flex align-items-center"
       >
@@ -137,7 +135,7 @@ Array [
             className="mr-1"
           >
             <svg
-              color="#c1c8ce"
+              color="#ffc600"
               fill="currentColor"
               height="10.9px"
               size="10.9px"
@@ -145,7 +143,7 @@ Array [
               strokeWidth="0"
               style={
                 Object {
-                  "color": "#c1c8ce",
+                  "color": "#ffc600",
                 }
               }
               viewBox="0 0 576 512"
@@ -185,7 +183,7 @@ Array [
         <p
           className="sc-bxivhb bMmFRg mr-2 ml-2"
         >
-          1 review
+          3 reviews
         </p>
         <a
           className="sc-ifAKCX kzaiVf"
@@ -199,16 +197,18 @@ Array [
       <div
         className="d-flex justify-content-start"
       >
-        <h5
+        <span
           className="sc-bxivhb jcyREl mt-1 mb-1 mr-3"
         >
-          $499
-        </h5>
-        <h5
+          $
+          499
+        </span>
+        <span
           className="sc-bxivhb ifxdZA mt-1 mb-1 old_price"
         >
-          $599
-        </h5>
+          $
+          599
+        </span>
       </div>
       <p
         className="sc-bxivhb itQfeN"
@@ -222,25 +222,29 @@ Array [
           className="sc-htoDjs eBYcaS m1"
           onClick={[Function]}
         >
-          <svg
-            color="inherit"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "inherit",
-              }
-            }
-            viewBox="0 0 576 512"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="mr-2 ml-3 d-flex"
           >
-            <path
-              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
-            />
-          </svg>
+            <svg
+              color="inherit"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": "inherit",
+                }
+              }
+              viewBox="0 0 576 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+              />
+            </svg>
+          </div>
           Add To Cart
         </button>
         <div
@@ -509,12 +513,14 @@ Array [
           <h5
             className="sc-bxivhb jcyREl mr-3"
           >
-            $499
+            $
+            499
           </h5>
           <h5
             className="sc-bxivhb ifxdZA old_price"
           >
-            $599
+            $
+            599
           </h5>
         </div>
       </div>
@@ -527,9 +533,7 @@ Array [
       <div>
         <div
           className="sc-iwsKbI cWLSIZ"
-        >
-          Hot
-        </div>
+        />
         <div
           className="imageContainer"
           onMouseEnter={[Function]}
@@ -611,7 +615,7 @@ Array [
           <p
             className="sc-bxivhb WXmdq product_name"
           >
-            Beats Solo 2 On Ear Headphones - Black
+            Apple Macbook Pro
           </p>
         </div>
         <div
@@ -693,7 +697,7 @@ Array [
             className="mr-1"
           >
             <svg
-              color="#c1c8ce"
+              color="#ffc600"
               fill="currentColor"
               height="10.9px"
               size="10.9px"
@@ -701,7 +705,7 @@ Array [
               strokeWidth="0"
               style={
                 Object {
-                  "color": "#c1c8ce",
+                  "color": "#ffc600",
                 }
               }
               viewBox="0 0 576 512"
@@ -717,7 +721,7 @@ Array [
             className="mr-1"
           >
             <svg
-              color="#c1c8ce"
+              color="#ffc600"
               fill="currentColor"
               height="10.9px"
               size="10.9px"
@@ -725,7 +729,7 @@ Array [
               strokeWidth="0"
               style={
                 Object {
-                  "color": "#c1c8ce",
+                  "color": "#ffc600",
                 }
               }
               viewBox="0 0 576 512"
@@ -765,16 +769,18 @@ Array [
         <div
           className="d-flex justify-content-start"
         >
-          <h5
+          <span
             className="sc-bxivhb jcyREl mr-3"
           >
-            $499
-          </h5>
-          <h5
+            $
+            499
+          </span>
+          <span
             className="sc-bxivhb ifxdZA old_price"
           >
-            $599
-          </h5>
+            $
+            599
+          </span>
         </div>
       </div>
     </div>
