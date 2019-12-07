@@ -7,10 +7,10 @@ export const Links = Styled(Link)`
     border:none
     padding:1rem;
     &:hover{
-        color:${theme.colors.primaryDark}
+        color:${theme.colors.secondaryDark}
     }
     &:focus{
-        color:${theme.colors.primaryDark}
+        color:${theme.colors.secondaryDark}
     }
 `
 

@@ -8,7 +8,7 @@ const Dropdown=()=>(
    <DropWrapper light className="d-flex my-dropdown">
        <Wrapper className="d-flex justify-content-between flex-wrap pt-3 pl-5 pr-5 pb-3">
         {categories.map((category,key)=>(
-            <CatWrapper className="d-flex flex-column" key={key}>
+            <CatWrapper className="d-flex flex-column align-items-start" key={key}>
                 <Text xSmall secondaryDarkColor >
                     {category.name}
                 </Text>
