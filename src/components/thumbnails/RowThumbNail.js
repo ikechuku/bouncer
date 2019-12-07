@@ -28,9 +28,9 @@ const RowThumbNail = ({ stock }) => {
     <div>
       <CardWrapperDIV show={showIcons}>
         <div>
-          <HotWrapper dangerDark>{stock.hot && "Hot"}</HotWrapper>
+          <HotWrapper dangerDark>{stock.trending && "Hot"}</HotWrapper>
           <div onMouseEnter={handleShowIcons} className="imageContainer">
-            <img src={stock.image} alt="laptop" />
+            <img src={stock.photo} alt="laptop" />
           </div>
           <div onMouseLeave={handleCloseIcons} className="iconContainer">
             <div onMouseLeave={handleCloseIcons} className="iconContainer">
@@ -60,7 +60,7 @@ const RowThumbNail = ({ stock }) => {
           <div className="d-flex justify-content-start">
             {Array(6)
               .fill("#c1c8ce")
-              .fill("#ffc600", 0, stock.stars)
+              .fill("#ffc600", 0, stock.ratings)
               .map((item, i) => (
                 <div key={i} className="mr-1">
                   <FaStar color={item} />
@@ -68,18 +68,25 @@ const RowThumbNail = ({ stock }) => {
               ))}
           </div>
           <div className="d-flex justify-content-start">
-            <Text ltSpacing0 className="mr-3" dangerDarkColor as="h5" ht0 small>
-              {stock.price}
+            <Text
+              ltSpacing0
+              className="mr-3"
+              dangerDarkColor
+              as="span"
+              ht0
+              small
+            >
+              ${stock.price}
             </Text>
             <Text
               className="old_price"
               ltSpacing0
               secondaryDarkColor
-              as="h5"
+              as="span"
               ht0
               small
             >
-              {stock.oldPrice}
+              ${stock.discountedPrice}
             </Text>
           </div>
         </div>
@@ -90,15 +97,16 @@ const RowThumbNail = ({ stock }) => {
 
 RowThumbNail.defaultProps = {
   stock: {
-    hot: true,
+    trending: false,
     id: 1,
-    stars: 3,
-    name: "Beats Solo 2 On Ear Headphones - Black",
-    attribute:
+    ratings: 5,
+    name: "Apple Macbook Pro",
+    description:
       "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor",
-    price: "$499",
-    oldPrice: "$599",
-    image: lp
+    price: "499",
+    reviews: 3,
+    discountedPrice: "599",
+    photo: lp
   }
 };
 

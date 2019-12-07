@@ -36,9 +36,9 @@ const BlockThumbNail = ({ stock }) => {
     <div>
       <CardWrapperDIV show={showIcons}>
         <div>
-          <HotWrapper dangerDark>{stock.hot && "Hot"}</HotWrapper>
+          <HotWrapper dangerDark>{stock.trending && "Hot"}</HotWrapper>
           <div onMouseEnter={handleShowIcons} className="imageContainer">
-            <img src={stock.image} alt="laptop" />
+            <img src={stock.photo} alt="laptop" />
           </div>
           <div onMouseLeave={handleCloseIcons} className="iconContainer">
             <IconWrapper
@@ -66,7 +66,7 @@ const BlockThumbNail = ({ stock }) => {
           <div className="d-flex justify-content-center">
             {Array(6)
               .fill("#c1c8ce")
-              .fill("#ffc600", 0, stock.stars)
+              .fill("#ffc600", 0, stock.ratings)
               .map((item, i) => (
                 <div key={i} className="mr-1">
                   <FaStar color={item} />
@@ -75,7 +75,7 @@ const BlockThumbNail = ({ stock }) => {
           </div>
           <div className="d-flex justify-content-center">
             <Text ltSpacing0 className="mr-3" dangerDarkColor as="h5" ht0 small>
-              {stock.price}
+              ${stock.price}
             </Text>
             <Text
               className="old_price"
@@ -85,7 +85,7 @@ const BlockThumbNail = ({ stock }) => {
               ht0
               small
             >
-              {stock.oldPrice}
+              ${stock.discountedPrice}
             </Text>
           </div>
         </div>
@@ -96,15 +96,16 @@ const BlockThumbNail = ({ stock }) => {
 
 BlockThumbNail.defaultProps = {
   stock: {
-    hot: false,
+    trending: false,
     id: 1,
-    stars: 5,
+    ratings: 5,
     name: "Apple Macbook Pro",
-    attribute:
+    description:
       "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor",
-    price: "$499",
-    oldPrice: "$599",
-    image: lp
+    price: "499",
+    reviews: 3,
+    discountedPrice: "599",
+    photo: lp
   }
 };
 

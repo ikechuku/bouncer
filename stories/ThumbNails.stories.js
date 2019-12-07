@@ -1,5 +1,5 @@
 import React from "react";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { withKnobs, boolean,number,text } from "@storybook/addon-knobs";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import theme from "../src/components/theme";
@@ -10,28 +10,67 @@ import {
 } from "../src/components/thumbnails";
 
 
-export const blockThumbNail = () => (
-         <ThemeProvider theme={theme}>
-           <BlockThumbNail />
-         </ThemeProvider>
-       );
+export const blockThumbNail = () => {
+     const store = {
+       id: number("id"),
+       ratings: number("ratings"),
+       name: text("name"),
+       description: text("description"),
+       price: text("price"),
+       reviews: number("reviews"),
+       discountedPrice: text("discounted price"),
+       photo: text("photo url"),
+       trending: boolean("Trending")
+     };
+    return (
+      <ThemeProvider theme={theme}>
+        <BlockThumbNail stock={store} />
+      </ThemeProvider>
+    );
+}
 
-export const rowThumbNail = () => (
-         <ThemeProvider theme={theme}>
-           <RowThumbNail />
-         </ThemeProvider>
-       );
+export const rowThumbNail = () => {
+    const store = {
+      id: number("id"),
+      ratings: number("ratings"),
+      name: text("name"),
+      description: text("description"),
+      price: text("price"),
+      reviews: number("reviews"),
+      discountedPrice: text("discounted price"),
+      photo: text("photo url"),
+      trending: boolean("Trending")
+    };
+    return (
+      <ThemeProvider theme={theme}>
+        <RowThumbNail stock={store} />
+      </ThemeProvider>
+    );}
 
-export const inlineThumbNail = () => (
+export const inlineThumbNail = () => {
+    const store = {
+      id: number("id"),
+      ratings: number("ratings"),
+      name: text("name"),
+      description: text("description"),
+      price: text("price"),
+      reviews: number("reviews"),
+      discountedPrice: text("discounted price"),
+      photo: text("photo url"),
+      trending: boolean("Trending")
+    };
+    return(
+    
     <ThemeProvider theme={theme}>
         <BrowserRouter>
-           <InlineThumbNail />
+           <InlineThumbNail  stock={store} />
         </BrowserRouter>
          </ThemeProvider>
-       );
+       )};
 
 
 export default {
-  title: "ThumbNails",
+  title: "Thumbnails",
   decorators: [withKnobs]
 };
+
