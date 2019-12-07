@@ -22,7 +22,7 @@ export const Links = Styled(Text)`
     padding:0.2rem;
     text-decoration:none;
     &:hover{
-        color:${theme.colors.primaryDark}
+        color:${theme.colors.secondary}
     }
 
 `
