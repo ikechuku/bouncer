@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import backgroundColor, { color } from "../../color/mixins";
+
 
 export const CardWrapperDIV = styled.div`
          display: flex;
@@ -46,41 +48,32 @@ export const CardWrapperDIV = styled.div`
            -ms-border-radius: 50%;
            -o-border-radius: 50%;
          }
-         & .product_price {
-           font-size: 1rem;
-           line-height: 1.05;
-           letter-spacing: 0.4px;
-           text-align: center;
-           color: #ff4858;
-           margin-right: 15px;
-         }
-         & .product_old_price {
-           font-size: 1rem;
-           text-decoration: line-through;
-           line-height: 1.05;
-           letter-spacing: 0.4px;
-           text-align: center;
-           color: #c1c8ce;
-         }
-         & .flex_div {
-           display: flex;
-
-           justify-content: space-between;
-         }
-         & .priceContainer {
-           display: flex;
-
-           justify-content: space-start;
-         }
+        
        `;
 
 export const HotWrapper = styled.div`
-  width: 40px;
-  text-align: center;
-  color: white;
-  border-radius: 2px;
-  background-color: #ff4858;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.67;
+         width: 40px;
+         text-align: center;
+         color: white;
+         border-radius: 2px;
+         font-size: 12px;
+         font-weight: 600;
+         line-height: 1.67;
+         ${backgroundColor}
+       `;
+export const IconWrapper = styled.div`
+  width: 2.1rem;
+  height: 33.6px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgba(51, 160, 255, 0.25);
+  ${backgroundColor}
+  ${color}
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 `;

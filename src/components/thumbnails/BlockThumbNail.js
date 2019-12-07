@@ -6,6 +6,7 @@ import lp from "./assets/lp.png";
 import {
   CardWrapperDIV,
   HotWrapper,
+  IconWrapper
 } from "./styles/BlockThumbNailStyle";
 import Text from '../text'
 
@@ -35,49 +36,57 @@ const BlockThumbNail = ({ stock }) => {
     <div>
       <CardWrapperDIV show={showIcons}>
         <div>
-          <HotWrapper>{stock.hot && "Hot"}</HotWrapper>
+          <HotWrapper dangerDark>{stock.hot && "Hot"}</HotWrapper>
           <div onMouseEnter={handleShowIcons} className="imageContainer">
             <img src={stock.image} alt="laptop" />
           </div>
           <div onMouseLeave={handleCloseIcons} className="iconContainer">
-            <div
+            <IconWrapper
               onClick={handleBuyItem}
-              style={{
-                backgroundColor: `${(buyItem && "#33a0ff") || "inherit"}`
-              }}
-              className="iconWrapper"
+              {...(buyItem ? { primary: true } : {})}
             >
               <FaShoppingCart color={buyItem && "white"} />
-            </div>
-            <div
+            </IconWrapper>
+            <IconWrapper
               onClick={handleLikeItem}
-              style={{
-                backgroundColor: `${(likeItem && "#33a0ff") || "inherit"}`
-              }}
-              className="iconWrapper heart"
+              {...(likeItem ? { primary: true } : {})}
+              className="ml-2"
             >
               <FaHeart color={likeItem && "white"}></FaHeart>
-            </div>
+            </IconWrapper>
           </div>
         </div>
 
-        <div >
-          <div className="stockName">
-            <Text xbold ltSpacing0 ht1 xSmall className="product_name">
+        <div>
+          <div className="stockName d-flex justify-content-center">
+            <Text bold ltSpacing0 ht1 xSmall className="product_name">
               {stock.name}
             </Text>
           </div>
-          <h5 className="flex_div">
-            <FaStar color="#ffc600" />
-            <FaStar color="#ffc600" />
-            <FaStar color="#ffc600" />
-            <FaStar color="#ffc600" />
-            <FaStar />
-            <FaStar />
-          </h5>
-          <div className="flex_div">
-            <h5 className="product_price">{stock.price}</h5>
-            <h5 className="product_old_price">{stock.oldPrice}</h5>
+          <div className="d-flex justify-content-center">
+            {Array(6)
+              .fill("#c1c8ce")
+              .fill("#ffc600", 0, stock.stars)
+              .map((item, i) => (
+                <div key={i} className="mr-1">
+                  <FaStar color={item} />
+                </div>
+              ))}
+          </div>
+          <div className="d-flex justify-content-center">
+            <Text ltSpacing0 className="mr-3" dangerDarkColor as="h5" ht0 small>
+              {stock.price}
+            </Text>
+            <Text
+              className="old_price"
+              ltSpacing0
+              secondaryDarkColor
+              as="h5"
+              ht0
+              small
+            >
+              {stock.oldPrice}
+            </Text>
           </div>
         </div>
       </CardWrapperDIV>
@@ -89,6 +98,7 @@ BlockThumbNail.defaultProps = {
   stock: {
     hot: false,
     id: 1,
+    stars: 5,
     name: "Apple Macbook Pro",
     attribute:
       "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor",
