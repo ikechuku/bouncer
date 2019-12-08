@@ -11,8 +11,9 @@ exports[`test the state of the item 1`] = `
     <div
       class="sc-bdVaJa dOqzxm"
     >
+      2
        
-      item
+      items
     </div>
     <div
       class="sortby"
@@ -49,7 +50,7 @@ exports[`test the state of the item 1`] = `
       <label>
         <select
           class="sc-bxivhb hcoRsX select"
-          list="1,2"
+          list="1,2,3,4"
         >
           <option
             disabled=""
@@ -62,6 +63,12 @@ exports[`test the state of the item 1`] = `
           </option>
           <option>
             2
+          </option>
+          <option>
+            3
+          </option>
+          <option>
+            4
           </option>
         </select>
       </label>
