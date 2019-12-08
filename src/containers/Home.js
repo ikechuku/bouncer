@@ -14,7 +14,6 @@ let H1 = Styled.h1`
 `;
 
 const App = () => (
-
   <ThemeProvider theme={theme}>
     <Header secondaryLight xSmall />
     <Navbar/> 
@@ -22,8 +21,8 @@ const App = () => (
       Welcome
     </H1>
     <Breadcrumb secondary primaryColor>Home/index</Breadcrumb>
-    <SortFilter />
+    <SortFilter  />
   </ThemeProvider>
-);
+  )
 
 export default App;
