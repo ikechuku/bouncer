@@ -1,5 +1,4 @@
 import React from "react";
-// import { withKnobs, boolean, number, text } from "@storybook/addon-knobs";
 import { withKnobs } from "@storybook/addon-knobs";
 import { ThemeProvider } from "styled-components";
 import theme from "../src/components/theme";
