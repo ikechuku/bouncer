@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
-import iphonePic from "../../assets/pic.png";
+import iphonePic from "./assets/pic.png";
 import Text from "../../components/text";
 
 const Banner = ({
