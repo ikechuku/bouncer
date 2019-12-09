@@ -31,7 +31,7 @@ const LandingPageCarousel = ({products}) => {
               </div>
             </div>
             <div className="imgWrapper">
-              {items.productImg}
+            <img className="productImg" src={items.productImg} alt="MaskGroup1" />
             </div>
           </div>
           ))}
@@ -48,15 +48,15 @@ LandingPageCarousel.defaultProps={
   products:[
     {productName:"iPhone X",
      productSummary:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
-     productImg:<img className="productImg" src={MaskGroup1} alt="MaskGroup1" />
+     productImg:MaskGroup1,
   },
   {productName:"iPhone X",
      productSummary:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
-     productImg:<img className="productImg" src={MaskGroup1} alt="MaskGroup1" />
+     productImg:MaskGroup1,
   },
   {productName:"iPhone X",
      productSummary:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
-     productImg:<img className="productImg" src={MaskGroup1} alt="MaskGroup1" />
+     productImg:MaskGroup1,
   },
   ]
 }
