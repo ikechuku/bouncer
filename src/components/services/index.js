@@ -10,13 +10,15 @@ const Services = props => {
     <Container>
       <div className='d-flex'>
         {props.offers.map(offer => (
-          <div>
-            <div>{offer.icon}</div>
+          <div className='d-flex-space-between flex-column p-3'>
             <div>
-              <Text>{offer.service}</Text>
+            <img src={offer.icon} alt="support" />
             </div>
             <div>
-            <Text>{offer.description}</Text>
+              <Text medium bold>{offer.service}</Text>
+            </div>
+            <div>
+            <Text xSmall ht5 className='text-align'>{offer.description}</Text>
             </div>
           </div>
         ))}
@@ -30,19 +32,25 @@ export default Services;
 Services.defaultProps = {
   offers: [
     {
-      icon: <img src={shipping} alt="shipping" />,
+      icon: shipping,
       service: "FREE SHIPPING",
-      description: ""
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book`
     },
     {
-      icon: <img src={refund} alt="refund" />,
+      icon: refund,
       service: "100% REFUND",
-      description: ""
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book`
     },
     {
-      icon: <img src={support} alt="support" />,
+      icon: support,
       service: "SUPPORT 24/7",
-      description: ""
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book`
     }
   ]
 };
