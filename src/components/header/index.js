@@ -14,8 +14,8 @@ function Header({ ...props }) {
     <Head {...props} data-testid="headerId">
       <div className="container d-flex justify-content-between flex-wrap">
         <div className="d-flex">
-          <SelectGroup list={language} sm ></SelectGroup>
-          <SelectGroup list={currency} sm ></SelectGroup>
+          <SelectGroup list={language} sm secondaryLight></SelectGroup>
+          <SelectGroup list={currency} sm secondaryLight></SelectGroup>
         </div>
         <div className="d-flex align-items-center">
           

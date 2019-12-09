@@ -6,16 +6,14 @@ import Toggle from "./toggle"
 import {SortFilterStyle } from './style'
 import SelectGroup from '../form/select'
 
-const SortFilter = ({items, ...props}) => {
-    
-    const handleDisplay = (index) => {
+const SortFilter = ({items,...props}) => {
+    const handleClick = (e)=>{
+        let value = e.target.value
+        props.paginateBy(value)
+    }
+    const handleDisplay = (index)=>{
         props.displayBy(index)
     }
-
-    const handleShow = (e) => {
-        props.showBy(e.target.value)
-    }
-
     const handleSort = (e) => {
         props.sortBy(e.target.value)
     }
@@ -29,7 +27,7 @@ const SortFilter = ({items, ...props}) => {
                 </div>
                 <div className='show'>
                     <p>Show</p>
-                    <SelectGroup onChange={handleShow} className='select' list={props.show}  xsmall  secondary/>
+                    <SelectGroup className='select' list={props.show} onChange={handleClick}  xsmall  secondary/>
                 </div>
             </div>
             <Toggle onClick={handleDisplay}/>
