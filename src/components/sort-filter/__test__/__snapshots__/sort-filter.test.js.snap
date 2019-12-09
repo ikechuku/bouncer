@@ -50,13 +50,25 @@ exports[`test the state of the item 1`] = `
       <label>
         <select
           class="sc-bxivhb hcoRsX select"
-          list=""
+          list="1,2,3,4"
         >
           <option
             disabled=""
             value=""
           >
             Select
+          </option>
+          <option>
+            1
+          </option>
+          <option>
+            2
+          </option>
+          <option>
+            3
+          </option>
+          <option>
+            4
           </option>
         </select>
       </label>
