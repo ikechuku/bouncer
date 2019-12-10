@@ -6,13 +6,10 @@ import { Wrapper } from "./styles";
 import Pagination from "../paginate";
 export default function Layout() {
   const [grid, setGrid] = useState(true);
-
-  let paginateOption = [];
   let display = index => {
     setGrid(!grid);
   };
-  paginateOption = [4,8,12];
-  
+  let paginateOption = [4,8,12];
   const [end, setEnd] = useState(paginateOption[0]);
   const [itemsPerPage,setItemsPerPage]=useState(paginateOption[0])
   const [pagination, setPagination] = useState(Math.ceil(items.length/paginateOption[0]));
