@@ -2,13 +2,13 @@
 
 exports[`renders correctly when called  1`] = `
 <div
-  className="sc-bxivhb egORZw"
+  className="sc-bxivhb etLfoT"
 >
   <section
-    className="sc-ifAKCX sRVVu"
+    className="sc-ifAKCX eCvCjk"
   >
     <div
-      className="sc-EHOje jCqTEK"
+      className="sc-EHOje hTTwXQ"
     >
       <div
         className="textPhone"
@@ -42,7 +42,7 @@ exports[`renders correctly when called  1`] = `
       </div>
     </div>
     <div
-      className="sc-bZQynM hdYmYQ image_container"
+      className="sc-bZQynM dOHrQS image_container"
     >
       <img
         alt="Iphone"
