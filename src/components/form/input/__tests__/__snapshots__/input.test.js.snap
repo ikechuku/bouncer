@@ -16,7 +16,6 @@ exports[`renders correctly 1`] = `
     aria-label="input"
     aria-required="true"
     className="sc-bdVaJa gbFaYM"
-    id="input"
     label="password"
     type="password"
   />
