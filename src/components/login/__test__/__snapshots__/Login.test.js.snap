@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when component is called 1`] = `
+<div
+  className="sc-bdVaJa ixFDBh"
+>
+  <div
+    className="loginImageContainer"
+  >
+    <img
+      alt="Login"
+      src="loginImage.png"
+    />
+  </div>
+  <div
+    className="loginForm"
+  >
+    <div
+      className="header"
+    >
+      <a
+        className="sc-bwzfXH bPPCVC active pb-2"
+        href="/login"
+        onClick={[Function]}
+      >
+        Sign in
+      </a>
+      <a
+        className="sc-bwzfXH bPPCVC"
+        href="/register"
+        onClick={[Function]}
+      >
+        Register
+      </a>
+    </div>
+    <div
+      className="form"
+    >
+      <form>
+        <div
+          className="sc-ifAKCX evpAft"
+        >
+          <label
+            className="sc-bxivhb bvzMcK"
+            htmlFor="input"
+          >
+             
+            Email
+             
+          </label>
+          <input
+            aria-label="input"
+            aria-required="true"
+            className="sc-htpNat ieoNZF"
+            label="Email"
+            name="email"
+            placeholder="Enter Email Here"
+            type="email"
+          />
+        </div>
+        <div
+          className="sc-ifAKCX evpAft"
+        >
+          <label
+            className="sc-bxivhb bvzMcK"
+            htmlFor="input"
+          >
+             
+            Password
+             
+          </label>
+          <input
+            aria-label="input"
+            aria-required="true"
+            className="sc-htpNat ieoNZF"
+            label="Password"
+            name="password"
+            placeholder="Enter Password Here"
+            type="password"
+          />
+        </div>
+        <button
+          className="sc-EHOje hKRBx"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+    <div
+      className="footer"
+    >
+      <a
+        className="sc-bwzfXH bPPCVC"
+        href="/forgot-password"
+        onClick={[Function]}
+      >
+        Forgot password
+      </a>
+    </div>
+  </div>
+</div>
+`;
