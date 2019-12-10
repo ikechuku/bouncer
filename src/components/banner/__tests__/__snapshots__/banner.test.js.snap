@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when called  1`] = `
+<div
+  className="sc-bxivhb etLfoT"
+>
+  <section
+    className="sc-ifAKCX eCvCjk"
+  >
+    <div
+      className="sc-EHOje hTTwXQ"
+    >
+      <div
+        className="textPhone"
+      >
+        <p
+          className="sc-bdVaJa hXIHfI"
+        >
+          iPhone 6 Plus
+        </p>
+      </div>
+      <div
+        className="textPhone"
+      >
+        <p
+          className="sc-bdVaJa dAMGmB"
+        >
+          Performance and design. Taken right to the edge.
+        </p>
+      </div>
+      <div
+        className="textPhone"
+      >
+        <p
+          className="sc-bdVaJa egjVsa"
+        >
+          SHOP NOW
+        </p>
+        <div
+          className="Rectangle-15"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-bZQynM dOHrQS image_container"
+    >
+      <img
+        alt="Iphone"
+        height="auto"
+        src="pic.png"
+        width="100%"
+      />
+    </div>
+  </section>
+</div>
+`;
