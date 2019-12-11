@@ -303,3 +303,7 @@ a {
 .old_price {
   text-decoration: line-through;
 }
+
+.text-align {
+  text-align: center;
+}
