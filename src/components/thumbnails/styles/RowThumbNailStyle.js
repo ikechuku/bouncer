@@ -4,7 +4,6 @@ import backgroundColor, { color } from "../../color/mixins";
 
 export const CardWrapperDIV = styled.div`
          display: flex;
-         width: 35.625rem;
          height: 224px;
          justify-content: space-around;
          align-items: center;
