@@ -4,7 +4,6 @@ import { LoginContainer, Navigation } from "./styles";
 
 const Login = lazy(() => import("./Login"));
 const Register = lazy(() => import("./Register"));
-// const Vendor = lazy(() => import("./Vendor"));
 
 const SignIn = () => {
   return (
