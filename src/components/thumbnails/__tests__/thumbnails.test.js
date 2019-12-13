@@ -1,7 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { ThemeProvider } from "styled-components";
-import { InlineThumbNail, BlockThumbNail, RowThumbNail } from "../";
+import {
+  InlineThumbNail,
+  BlockThumbNail,
+  RowThumbNail,
+  FeaturedProduct
+} from "../";
 import theme from "../../theme";
 
 it("renders correctly", () => {
@@ -11,6 +16,7 @@ it("renders correctly", () => {
         <InlineThumbNail />
         <BlockThumbNail />
         <RowThumbNail />
+        <FeaturedProduct />
       </ThemeProvider>
     )
     .toJSON();

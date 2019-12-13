@@ -7,6 +7,7 @@ import Breadcrumb from "../components/breadcrumb";
 import Header from "../components/header"
 import Navbar from "../components/navbar";
 import SortFilter from "../components/sort-filter";
+import Featured from "../components/featured";
 
 let H1 = Styled.h1`
     ${backgroundColor}
@@ -21,7 +22,8 @@ const App = () => (
       Welcome
     </H1>
     <Breadcrumb secondary primaryColor>Home/index</Breadcrumb>
-    <SortFilter  />
+    <SortFilter />
+    <Featured />
   </ThemeProvider>
   )
 

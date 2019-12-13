@@ -9,8 +9,8 @@ const Services = props => {
   return (
     <Container>
       <div className='d-flex'>
-        {props.offers.map(offer => (
-          <div className='d-flex-space-between flex-column p-3'>
+        {props.offers.map((offer, i) => (
+          <div key={i} className='d-flex-space-between flex-column p-3'>
             <div>
             <img src={offer.icon} alt="support" />
             </div>
