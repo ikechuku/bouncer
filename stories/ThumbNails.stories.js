@@ -6,7 +6,8 @@ import theme from "../src/components/theme";
 import {
   BlockThumbNail,
   InlineThumbNail,
-  RowThumbNail
+  RowThumbNail,
+  FeaturedProduct
 } from "../src/components/thumbnails";
 
 
@@ -66,7 +67,29 @@ export const inlineThumbNail = () => {
            <InlineThumbNail  stock={store} />
         </BrowserRouter>
          </ThemeProvider>
-       )};
+  )
+};
+       
+export const featuredProductThumbNail = () => {
+         const store = {
+           id: number("id"),
+           ratings: number("ratings"),
+           name: text("name"),
+           description: text("description"),
+           price: text("price"),
+           reviews: number("reviews"),
+           discountedPrice: text("discounted price"),
+           photo: text("photo url"),
+           trending: boolean("Trending")
+         };
+         return (
+           <ThemeProvider theme={theme}>
+             <BrowserRouter>
+               <FeaturedProduct stock={store} />
+             </BrowserRouter>
+           </ThemeProvider>
+         );
+       };
 
 
 export default {

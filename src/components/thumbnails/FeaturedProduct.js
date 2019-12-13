@@ -1,7 +1,6 @@
 import React from "react";
 
 import FaStar from "./Star";
-import lp from "./assets/lp.png";
 import {
   CardWrapperDIV
 } from "./styles/FeatureProductStyle";
@@ -72,7 +71,8 @@ FeaturedProductThumbNail.defaultProps = {
     price: "499",
     reviews: 3,
     discountedPrice: "599",
-    photo: lp
+    photo:
+      "https://res.cloudinary.com/decagonbouncer/image/upload/v1575976812/bouncer-frontend/tv_tray_c0ht3d.png"
   }
 };
 

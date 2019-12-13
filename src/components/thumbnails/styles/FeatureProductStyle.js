@@ -1,15 +1,14 @@
 import styled from "styled-components";
-// import backgroundColor, { color } from "../../color/mixins";
 
 export const CardWrapperDIV = styled.div`
          display: flex;
-         width: 21.4375rem;
+         width: 18.4375rem;
          height: 9.875rem;
          justify-content: space-between;
          align-items: flex-start;
          margin-bottom: 1.875rem;
          & .imageContainer {
-           width: 13.125rem;
+           width: 10.125rem;
            height: 9.875rem;
            margin-right: 1.25rem;
            border: solid 3px #f6f7f8;
