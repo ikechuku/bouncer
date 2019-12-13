@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="form">
       <form>
-        <Input name="email" medium label="Email:" type="email" />
+        <Input name="username" medium label="Username:" type="text" />
         <Input name="password" medium label="Password" type="password" />
 
         <Button btnTransparentDanger btnLarge>

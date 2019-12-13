@@ -18,6 +18,7 @@ export const LoginContainer = Styled.div`
          }
 
     }
+    
     .loginImageContainer{
         width: 60%;
         height: 90%;
@@ -45,7 +46,7 @@ export const LoginContainer = Styled.div`
             margin: 3rem 0;
         }
         label{
-            margin-top: 3rem;
+            margin-top: 1.5rem;
             font-weight: bold;
         }
     .boldLink{
@@ -55,9 +56,10 @@ export const LoginContainer = Styled.div`
 
     }
     }
+    
     .footer{
         display:flex;
-            justify-content: center;
+        justify-content: space-between;
 
         
     }

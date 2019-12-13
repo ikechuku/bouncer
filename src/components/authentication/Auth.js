@@ -1,10 +1,10 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Switch } from "react-router-dom";
 import { LoginContainer, Navigation } from "./styles";
-// import LoginImage from "./assets/loginImage.png";
 
 const Login = lazy(() => import("./Login"));
 const Register = lazy(() => import("./Register"));
+// const Vendor = lazy(() => import("./Vendor"));
 
 const SignIn = () => {
   return (
@@ -46,7 +46,16 @@ const SignIn = () => {
               </Switch>
             </Suspense>
           </div>
+
           <div className="footer">
+            <Navigation
+              activeClassName="active"
+              className="boldLink pb-2"
+              to="/vendor"
+            >
+              Become a vendor
+            </Navigation>
+
             <Navigation to="/forgot-password">Forgot password</Navigation>
           </div>
         </div>
