@@ -1,26 +1,26 @@
 import React from "react";
 import { LoginContainer, Navigation } from "./styles";
-import LoginImage from "./assets/loginImage.png";
 import Input from "../form/input";
 import Button from "../button";
+
 const SignIn = () => {
   return (
     <LoginContainer>
       <div className="loginImageContainer">
-        <img src={LoginImage} alt="Login" />
+        <img
+          src="https://res.cloudinary.com/decagonbouncer/image/upload/v1576063313/bouncer-frontend/login_image.png"
+          alt="Login"
+        />
       </div>
       <div className="loginForm">
         <div className="header">
-          
-
           <Navigation
-           
-           activeClassName="active"
-           className="boldLink pb-2"
-           to="/forgot-password"
-         >
-           Forgot Password
-         </Navigation>
+            activeClassName="active"
+            className="boldLink pb-2"
+            to="/forgot-password"
+          >
+            Forgot Password
+          </Navigation>
         </div>
         <div className="form">
           <form>

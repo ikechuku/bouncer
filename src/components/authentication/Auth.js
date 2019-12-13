@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Switch } from "react-router-dom";
 import { LoginContainer, Navigation } from "./styles";
-import LoginImage from "./assets/loginImage.png";
+// import LoginImage from "./assets/loginImage.png";
 
 const Login = lazy(() => import("./Login"));
 const Register = lazy(() => import("./Register"));
@@ -10,7 +10,10 @@ const SignIn = () => {
   return (
     <LoginContainer>
       <div className="loginImageContainer">
-        <img src={LoginImage} alt="Login" />
+        <img
+          src="https://res.cloudinary.com/decagonbouncer/image/upload/v1576063313/bouncer-frontend/login_image.png"
+          alt="Login"
+        />
       </div>
       <div className="loginForm">
         <div className="header">
