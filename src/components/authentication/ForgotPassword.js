@@ -22,7 +22,7 @@ const Password = () => {
     <LoginContainer>
       <div className="loginImageContainer">
         <img
-          src="https://res.cloudinary.com/decagonbouncer/image/upload/v1576063313/bouncer-frontend/login_image.png"
+          src="https://res.cloudinary.com/decagonbouncer/image/upload/v1576504556/bouncer-frontend/lap_11copy_mhlpc5.svg"
           alt="Login"
         />
       </div>

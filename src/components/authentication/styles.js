@@ -7,7 +7,6 @@ export const LoginContainer = Styled.div`
     align-items: center;
     margin: 10px;
     @media screen and (max-width: 900px){
-        /* height: 80%; */
          .loginImageContainer{
              display: none;
          }
@@ -19,12 +18,14 @@ export const LoginContainer = Styled.div`
     }
     
     .loginImageContainer{
-        width: 60%;
+        width: 55%;
         height: 90%;
 
         img{
             width:100%;
             height: 100%;
+
+
         }    
     }
     .loginForm{
@@ -33,7 +34,6 @@ export const LoginContainer = Styled.div`
         justify-content: space-around;
         flex-direction: column;
         align-items: bottom;
-        /* border: solid red 3px; */
         .header{
             top: 100px;
             display: flex;

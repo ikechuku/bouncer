@@ -10,7 +10,7 @@ const NavLogo = () => {
       <Link to="/">
         <Logo>
           <img
-            src="https://res.cloudinary.com/decagonbouncer/image/upload/v1575976806/bouncer-frontend/logo_vcjh7n.png"
+            src="https://res.cloudinary.com/decagonbouncer/image/upload/v1576505112/bouncer-frontend/logo_alcxme.svg"
             alt="logo"
           />
         </Logo>
