@@ -5,7 +5,7 @@ const InputGroup = props => {
   return (
     <Container>
       <Label htmlFor="input"> {props.label} </Label>
-      <Input {...props} id="input" aria-label="input" aria-required="true" />
+      <Input {...props} aria-label="input" aria-required="true" />
     </Container>
   );
 };

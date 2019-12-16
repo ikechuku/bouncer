@@ -4,17 +4,16 @@ import theme from "../theme";
 
 export const LoginContainer = Styled.div`
     display: flex;
-    align-items: flex-start;
-    height:80vh;
+    align-items: center;
     margin: 10px;
     @media screen and (max-width: 900px){
-        justify-content: center;
+        /* height: 80%; */
          .loginImageContainer{
              display: none;
          }
          .loginForm{
              width: 80% !important;
-             margin: 0px 30px;
+             margin: 20px 30px;
          }
 
     }
@@ -34,6 +33,7 @@ export const LoginContainer = Styled.div`
         justify-content: space-around;
         flex-direction: column;
         align-items: bottom;
+        /* border: solid red 3px; */
         .header{
             top: 100px;
             display: flex;
@@ -43,7 +43,7 @@ export const LoginContainer = Styled.div`
         button{
             width: 100%;
             justify-content: center;
-            margin: 3rem 0;
+            margin: 2rem 0;
         }
         label{
             margin-top: 1.5rem;
@@ -85,5 +85,10 @@ export const Logo = Styled.div`
    align-items:center;
    height: 8vh;
    margin-left: 5rem;
+   
+`;
+export const Wrapper = Styled.div`
+  
+   color:${theme.colors.dangerDark}
    
 `;
