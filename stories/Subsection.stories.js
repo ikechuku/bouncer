@@ -6,11 +6,11 @@ import theme from "../src/components/theme";
 
 export const subsection = () => (
   <ThemeProvider theme={theme}>
-   <Subsection title="FEATURED PRODUCTS"/>
+   <Subsection title="LATEST NEWS"/>
   </ThemeProvider>
 );
 
 export default {
-  title: "Subsection",
+  title: "Latest News",
   decorators: [withKnobs]
 };
