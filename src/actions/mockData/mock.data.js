@@ -7,6 +7,11 @@ export const customerData = {
   password: "adamson"
 };
 
+export const loginData = {
+  username: "joel",
+  password: "joelpassword"
+};
+
 export const vendorData = {
   username: "Best4less",
   shop_name:"Best4less",
