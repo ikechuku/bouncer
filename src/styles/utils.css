@@ -335,6 +335,11 @@ a {
 }
 
 
+.mt-17 {
+  margin-top: 150px;
+}
+
+
 /* price */
 .old_price {
   text-decoration: line-through;
