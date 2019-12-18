@@ -6,7 +6,7 @@ const InputButton = ({ placeholder, ...props }) => {
   return (
     <Container {...props}>
       <Input placeholder={placeholder} />
-      <Button> Redeem</Button>
+      <Button>{props.name}</Button>
     </Container>
   );
 };

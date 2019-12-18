@@ -4,13 +4,13 @@ import Text from "../text";
 
 const Featured = ({ featureProduct }) => {
   return (
-    <div className='container'>
-      <div className="d-flex-center">
+    <div>
+      <div className="text-align">
         <Text bold ltSpacing0 ht1 large>
           FEATURED PRODUCTS
         </Text>
       </div>
-      <ul className="d-flex-space-between flex-wrap">
+      <ul className=" p-1 d-flex-space-between flex-wrap">
         {featureProduct.map(item => (
           <li key={item.id}>
             <FeaturedProductThumbNail stock={item} />

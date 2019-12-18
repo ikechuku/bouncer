@@ -1,30 +1,51 @@
 import React from "react";
-import Styled, { ThemeProvider } from "styled-components";
-
+import { ThemeProvider } from "styled-components";
 import theme from "../components/theme";
-import backgroundColor, { color } from "../components/color/mixins";
-import Breadcrumb from "../components/breadcrumb";
-import Header from "../components/header"
+import Header from "../components/header";
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import SortFilter from "../components/sort-filter";
+import LandingPageCarousel from "../components/carousel";
+import Advert from "../components/advert";
+import BestSellers from "../components/bestseller";
+import {
+  ProductsTypes,
+  Products
+} from "../components/bestseller/assets/data/products";
+import Banner from "../components/banner";
+import Services from "../components/services";
+import Subsection from "../components/subsection";
 import Featured from "../components/featured";
-
-let H1 = Styled.h1`
-    ${backgroundColor}
-    ${color}
-`;
+import InputButton from "../components/form/inputButton";
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Header secondaryLight xSmall />
-    <Navbar/> 
-    <H1 primary successColor>
-      Welcome
-    </H1>
-    <Breadcrumb secondary primaryColor>Home/index</Breadcrumb>
-    <SortFilter />
-    <Featured />
+    <div>
+      <Header secondaryLight xSmall />
+      <Navbar />
+      <LandingPageCarousel />
+      <div className="wrapper-2 position-2">
+        <Advert />
+        <BestSellers ProductsTypes={ProductsTypes} Products={Products} />
+      </div>
+      <div className="mt-12">
+        <Banner />
+      </div>
+      <div className="wrapper-2 mt-11">
+        <Services />
+        <Subsection title="LATEST NEWS" />
+        <div className="mt-11">
+          <Featured title="FEATURED PRODUCTS" />
+        </div>
+      </div>
+      <div className="wrapper-3 mt-11">
+        <InputButton placeholder="Search query..." name="Search" />
+      </div>
+      <div className="mt-17">
+        <Footer />
+      </div>
+    </div>
   </ThemeProvider>
-  )
+);
 
 export default App;
+

@@ -8,6 +8,6 @@ module.export = {
   testPathIgnorePatterns: ["/node_modules/", "/public/"],
   setupFilesAfterEnv: [
     "@testing-library/jest-dom/extend-expect",
-    "@testing-library/react/cleanup-after-each"
+    "@testing-library/react/cleanup-after-each",
   ] // setupFiles before the tests are ran
 };

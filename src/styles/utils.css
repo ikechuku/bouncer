@@ -95,6 +95,7 @@ a {
   color: black;
 }
 
+
 .p-1 {
   padding: 0.25rem !important;
 }
@@ -249,7 +250,25 @@ a {
 .mt-6 {
   margin-top: 1.75rem !important;
 }
+.mt-7 {
+  margin-top: 2rem !important;
+}
+.mt-8 {
+  margin-top: 2.5rem !important;
+}
+.mt-9 {
+  margin-top: 3rem !important;
+}
+.mt-10 {
+  margin-top: 4rem !important;
+}
+.mt-11 {
+  margin-top: 8rem !important;
+}
 
+.mt-12 {
+  margin-top: 11rem !important;
+}
 .mb-1 {
   margin-bottom: 0.25rem !important;
 }
@@ -299,6 +318,11 @@ a {
   margin-top: 30px;
 }
 
+.mt-17 {
+  margin-top: 150px;
+}
+
+
 /* price */
 .old_price {
   text-decoration: line-through;
@@ -314,4 +338,24 @@ a {
 
 .b-1 {
   border: 1px solid red;
+}
+
+.wrapper-2 {
+  width: 80%;
+  margin: auto;
+}
+
+.wrapper-3 {
+  max-width: 600px;
+  padding: 0 1.4em;
+  margin: 0 auto;
+}
+
+.position-1 {
+  position: absolute;
+}
+
+.position-2 {
+  position: relative;
+  top: -3.95rem;
 }
