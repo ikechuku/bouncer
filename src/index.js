@@ -7,6 +7,8 @@ import "./styles/animate.css";
 import "./styles/utils.css"
 import store from "./store";
 import Root from "./routes/Root";
+import 'izitoast/dist/js/iziToast.min'
+import 'izitoast/dist/css/iziToast.min.css'
 // import register from "./serviceWorker";
 
 ReactDOM.render(<Root store={store} />, document.getElementById("root"));

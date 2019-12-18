@@ -1,3 +1,4 @@
 import { combineReducers } from "redux";
-
-export default combineReducers({});
+import customerReducer from './customer.reducer'
+import vendorReducer from './vendor.reducer'
+export default combineReducers({customer:customerReducer, vendor:vendorReducer});
