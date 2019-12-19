@@ -152,6 +152,9 @@ a {
 .pt-6 {
   padding-top: 1.75rem !important;
 }
+.pt-x {
+  padding-top: 3.75rem !important;
+}
 
 .pr-1 {
   padding-right: 0.25rem !important;
@@ -317,6 +320,15 @@ a {
 .mt-16 {
   margin-top: 30px;
 }
+.equal {
+  flex-basis: 50%;
+}
+.sixty {
+  flex-basis: 60%;
+}
+.forty {
+  flex-basis: 40%;
+}
 
 .mt-17 {
   margin-top: 150px;
@@ -358,4 +370,25 @@ a {
 .position-2 {
   position: relative;
   top: -3.95rem;
+}
+.flex-1 {
+  flex-grow: 1;
+}
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.w-70 {
+  width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+  .w-70 {
+    width: 100%;
+  }
+  .equal {
+    flex-basis: 100%;
+  }
 }

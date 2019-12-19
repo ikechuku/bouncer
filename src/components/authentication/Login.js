@@ -4,10 +4,8 @@ import { connect, useSelector } from "react-redux";
 import { authLogin } from "../../actions/Login.actions";
 import { BeatLoader } from "react-spinners";
 import izitoast from "izitoast";
-
-import Button from "../button";
 import { Formik } from "formik";
-import { Wrapper } from "./styles";
+import { Wrapper, CustomButton } from "./styles";
 import { loginSchema } from "./validation";
 
 const Login = props => {
@@ -50,18 +48,15 @@ const Login = props => {
         info.status = 0;
       }
     });
-
-  }
+  };
   const isAuthenticated = (isLogin, info) => {
     if (isLogin && info.status >= 200 && info.status <= 299) {
-      success()
+      success();
     } else if (isLogin && info.status >= 400 && info.status <= 499) {
-      notValid()
-    }
-    else {
+      notValid();
+    } else {
       return null;
     }
-    
   };
   return (
     <Wrapper>
@@ -98,9 +93,14 @@ const Login = props => {
             />
             {errors.password ? errors.password : null}
 
-            <Button btndangerDark btnLarge type="submit">
+            <CustomButton
+              className="d-flex justify-content-center"
+              btndangerDark
+              btnLarge
+              type="submit"
+            >
               {(loading && <BeatLoader color="#fff" size={5} />) || "Login"}
-            </Button>
+            </CustomButton>
           </form>
         )}
       </Formik>
