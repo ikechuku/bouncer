@@ -5,12 +5,11 @@ const instance = axios.create({
   baseURL: BASE_URL
 });
 
+instance.interceptors.request.use(config => config);
 
-instance.interceptors.response.use((response)=>{
-  return response
-},
-(error)=>{  
-  return Promise.reject(error)
-}
-)
+instance.interceptors.response.use(
+  response => response,
+  error => Promise.reject(error)
+);
+
 export default instance;
