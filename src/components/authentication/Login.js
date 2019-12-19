@@ -34,6 +34,35 @@ const Login = props => {
     });
     props.history.push(`/`);
   };
+
+  const notValid = () => {
+    izitoast.show({
+      messageColor: "white",
+      title: "Login Error",
+      backgroundColor: "red",
+      titleColor: "white",
+      timeout: 5000,
+      message: info.data["error"],
+      onClosing: () => {
+        info.status = 0;
+      },
+      onOpening: () => {
+        info.status = 0;
+      }
+    });
+
+  }
+  const isAuthenticated = (isLogin, info) => {
+    if (isLogin && info.status >= 200 && info.status <= 299) {
+      success()
+    } else if (isLogin && info.status >= 400 && info.status <= 499) {
+      notValid()
+    }
+    else {
+      return null;
+    }
+    
+  };
   return (
     <Wrapper>
       <Formik
@@ -75,24 +104,7 @@ const Login = props => {
           </form>
         )}
       </Formik>
-      {isLogin && info.status >= 200 && info.status <= 299
-        ? success()
-        : isLogin && info.status >= 400 && info.status <= 499
-        ? izitoast.show({
-            messageColor: "white",
-            title: "Login Error",
-            backgroundColor: "red",
-            titleColor: "white",
-            timeout: 5000,
-            message: info.data["error"],
-            onClosing: () => {
-              info.status = 0;
-            },
-            onOpening: () => {
-              info.status = 0;
-            }
-          })
-        : null}
+      {isAuthenticated(isLogin, info)}
     </Wrapper>
   );
 };

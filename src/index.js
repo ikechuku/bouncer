@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import "./styles/index.css";
 import "./styles/utils.css";
 import "./styles/animate.css";
-import "./styles/utils.css";
 import store from "./store";
 import Root from "./routes/Root";
 import "izitoast/dist/js/iziToast.min";
