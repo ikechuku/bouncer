@@ -112,6 +112,11 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+ /* ul{
+  padding: 0;
+
+ } */
+
  ul, li{
    list-style: none;
  }
