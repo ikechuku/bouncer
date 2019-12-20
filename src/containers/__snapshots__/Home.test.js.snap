@@ -3057,53 +3057,46 @@ exports[`renders correctly 1`] = `
     className="mt-12"
   >
     <div
-      className="sc-jWBwVP kVFLuG"
+      className="sc-jWBwVP bAdpOA"
     >
       <section
-        className="sc-brqgnP jWUWey"
+        className="sc-brqgnP bMQfZz"
       >
         <div
           className="sc-cMljjf bAlosl"
         >
-          <div
-            className="textPhone"
-          >
+          <div>
             <p
               className="sc-bZQynM dRpzDl"
             >
               iPhone 6 Plus
             </p>
           </div>
-          <div
-            className="textPhone"
-          >
+          <div>
             <p
               className="sc-bZQynM flqrWT"
             >
               Performance and design. Taken right to the edge.
             </p>
           </div>
-          <div
-            className="textPhone"
-          >
+          <div>
             <p
               className="sc-bZQynM fDvTXX"
             >
-              SHOP NOW
+              <span
+                className="border-1"
+              >
+                SHOP NOW
+              </span>
             </p>
-            <div
-              className="Rectangle-15"
-            />
           </div>
         </div>
         <div
-          className="sc-jAaTju jRHUZQ image_container"
+          className="sc-jAaTju cgBBed"
         >
           <img
             alt="Iphone"
-            height="auto"
             src="pic.png"
-            width="100%"
           />
         </div>
       </section>

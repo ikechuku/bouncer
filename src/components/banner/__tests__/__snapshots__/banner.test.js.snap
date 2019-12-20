@@ -2,53 +2,46 @@
 
 exports[`renders correctly when called  1`] = `
 <div
-  className="sc-bxivhb etLfoT"
+  className="sc-bxivhb gFwdHb"
 >
   <section
-    className="sc-ifAKCX eCvCjk"
+    className="sc-ifAKCX bJMAHJ"
   >
     <div
       className="sc-EHOje hTTwXQ"
     >
-      <div
-        className="textPhone"
-      >
+      <div>
         <p
           className="sc-bdVaJa hXIHfI"
         >
           iPhone 6 Plus
         </p>
       </div>
-      <div
-        className="textPhone"
-      >
+      <div>
         <p
           className="sc-bdVaJa dAMGmB"
         >
           Performance and design. Taken right to the edge.
         </p>
       </div>
-      <div
-        className="textPhone"
-      >
+      <div>
         <p
           className="sc-bdVaJa egjVsa"
         >
-          SHOP NOW
+          <span
+            className="border-1"
+          >
+            SHOP NOW
+          </span>
         </p>
-        <div
-          className="Rectangle-15"
-        />
       </div>
     </div>
     <div
-      className="sc-bZQynM dOHrQS image_container"
+      className="sc-bZQynM dzMect"
     >
       <img
         alt="Iphone"
-        height="auto"
         src="pic.png"
-        width="100%"
       />
     </div>
   </section>
