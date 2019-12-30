@@ -1,8 +1,9 @@
 import * as Yup from "yup";
 
 export const passwordSchema = Yup.object({
-  email: Yup.string()
-    .email()
+  username: Yup.string()
+    .min(3, "Username is too short!")
+    .max(50, "Username is too long!")
     .required("Required")
 });
 
