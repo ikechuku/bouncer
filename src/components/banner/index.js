@@ -13,25 +13,26 @@ const Banner = ({ ...props }) => {
     <HeroOneDIV {...props}>
       <HeroOneContainerDIV >
         <HeroOneTextDIV>
-          <div className="textPhone">
+          <div>
             <Text xxlarge ht4 transparentColor>
               iPhone 6 Plus
             </Text>
           </div>
-          <div className="textPhone">
+          <div>
             <Text small ht6 transparentColor>
               Performance and design. Taken right to the edge.
             </Text>
           </div>
-          <div className="textPhone">
-            <Text xSmall bold ht6 transparentColor>
+          <div>
+            <Text xSmall bold ht6 transparentColor >
+              <span className='border-1'>
               SHOP NOW
+              </span>
             </Text>
-            <div className="Rectangle-15"></div>
           </div>
         </HeroOneTextDIV>
-        <ImageDIV className="image_container">
-          <img src={iphonePic} alt="Iphone" width="100%" height="auto" />
+        <ImageDIV>
+            <img src={iphonePic} alt="Iphone" />
         </ImageDIV>
       </HeroOneContainerDIV>
     </HeroOneDIV>

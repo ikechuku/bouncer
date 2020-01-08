@@ -335,6 +335,11 @@ a {
 }
 
 
+.mt-17 {
+  margin-top: 150px;
+}
+
+
 /* price */
 .old_price {
   text-decoration: line-through;
@@ -391,4 +396,8 @@ a {
   .equal {
     flex-basis: 100%;
   }
+
+.border-1 {
+  border-bottom: 2px solid white; 
+}
 }

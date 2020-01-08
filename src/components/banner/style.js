@@ -2,59 +2,49 @@ import Styled from "styled-components";
 import backgroundColor from "../color/mixins";
 
 const HeroOneDIV = Styled.div`
-margin-top:"36px";
 background-color: #33A0FF;
 ${backgroundColor};
 overflow: "visible";
-height: 611px;
-@media (max-width: 768px) {
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+width: 100%;
 }
 `;
+
+
 const HeroOneContainerDIV = Styled.section`
-max-width: "1139px";
+max-width: 80%;
+max-height: 611px;
 margin: 0px auto;
 display:flex;
 justify-content:space-between;
 align-items: flex-start;
-@media (max-width: 1024px) {
-    padding: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    background-color: 33A0FF;
-    ${backgroundColor};
-    width:100%;
-    height: auto;
-    padding: 0px;
+
+@media (max-width: 800px) {
+  max-width:100%;
+  padding-left: 10px;
+  align-items: flex-end;   
 }
 `;
+
+
 const HeroOneTextDIV = Styled.div`
 display:flex;
 flex-direction: column;
 justify-content:space-around;
 `;
+
 const ImageDIV = Styled.div`
 position: relative;
 top: -98px;
-bottom: 0px;
-width: 100%;
-display: flex;
-justify-content: center;
-height: auto;
-overflow: none;
 img{
-  max-width:677px;
+  max-width:100%;
 }
-@media (max-width: 1024px) {
-  position: relative;
-  top: 0px;
-  botton: 0px;
+@media (max-width: 800px) {
+  position: static;
   background-color: 33A0FF;
   ${backgroundColor};
+}
+@media (max-width: 1024px){
+  position: static;
 }      
 `;
 
