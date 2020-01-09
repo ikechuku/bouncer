@@ -4,6 +4,7 @@ import { LoginContainer, Navigation } from "./styles";
 import Nav from "./AuthenticationNav";
 import { ClipLoader } from "react-spinners";
 import theme from "../theme";
+import VerifyEmail from "../verify-email/Verify";
 const Login = lazy(() => import("./Login"));
 const Register = lazy(() => import("./Register"));
 const Vendor = lazy(() => import("./Vendor"));
@@ -94,6 +95,7 @@ const SignIn = () => {
                           path="/forgot-password"
                           component={ForgotPassword}
                         />
+                        <Route exact path="/verify_email" component={VerifyEmail} />
                       </Switch>
                     </Suspense>
                   </div>
