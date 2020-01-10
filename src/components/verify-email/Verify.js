@@ -11,7 +11,7 @@ const VerifyEmail = props => {
   const { emailVerify, data, error, sending } = props;
   useEffect(() => {
       emailVerify(verifyToken);
-}, [emailVerify]);
+}, []);
 
   let message = data.message
   console.log(data);

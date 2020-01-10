@@ -21,3 +21,5 @@ export const vendorData = {
 };
 
 export const token = {email_verification_token: "as34de"}
+
+export const username = {user_name:"adamson"}
