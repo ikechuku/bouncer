@@ -1,10 +1,10 @@
 //error message retriver
 export const retrieveMessage = err => {
-  if (err.response && err.response.data && err.response.data.message) {
-    return err.response.data.message;
+  if (err.response && err.response.data) {
+    return err.response.data.message || err.response.data.error
   } else if (err.message) {
     return err.message;
-  } else {
+  }  else {
     return err;
   }
 };
