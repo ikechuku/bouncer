@@ -9,6 +9,7 @@ const Login = lazy(() => import("./Login"));
 const Register = lazy(() => import("./Register"));
 const Vendor = lazy(() => import("./Vendor"));
 const ForgotPassword = lazy(() => import("./ForgotPassword"));
+const ResetPassword = lazy(() => import("./resetPassword"));
 const SignIn = () => {
   let location = useLocation();
   useEffect(() => {}, [location]);
@@ -95,7 +96,16 @@ const SignIn = () => {
                           path="/forgot-password"
                           component={ForgotPassword}
                         />
-                        <Route exact path="/verify_email" component={VerifyEmail} />
+                        <Route
+                          exact
+                          path="/verify_email"
+                          component={VerifyEmail}
+                        />
+                        <Route
+                          exact
+                          path="/login/reset-password"
+                          component={ResetPassword}
+                        />
                       </Switch>
                     </Suspense>
                   </div>

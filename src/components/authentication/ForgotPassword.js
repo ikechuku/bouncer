@@ -60,7 +60,9 @@ const Password = props => {
             titleColor: "white",
             timeout: 5000,
             message: "A message has been sent to your mail",
-            onClosed: setForgetPasswordSent(false)
+            onClosed: ()=>{setForgetPasswordSent(false)
+            props.history.push("/login/reset-password")
+            } 
           })
         : error.length > 1 && forgetPasswordSent === true
         ? izitoast.show({
