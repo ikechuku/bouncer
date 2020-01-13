@@ -21,7 +21,7 @@ Advert.defaultProps = {
   products: [
     {
       productUrl:
-        "https://res.cloudinary.com/decagonbouncer/image/upload/v1575986836/bouncer-frontend/iphone_ad_hh1iig.png"
+        "https://res.cloudinary.com/decagonbouncer/image/upload/v1575986836/bouncer-frontend/iphone_ad"
     },
     {
       productUrl:
