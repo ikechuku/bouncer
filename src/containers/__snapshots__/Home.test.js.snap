@@ -3,6 +3,49 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
+    data-testid="gopro"
+  >
+    <div
+      className="sc-Rmtcm hbmCEU"
+    >
+      <div
+        className="title"
+      >
+        <p
+          className="sc-bZQynM hqtEtN"
+        >
+          GoPro Hero 6
+        </p>
+      </div>
+      <div
+        className="description"
+      >
+        <p
+          className="sc-bZQynM koAURm"
+        >
+          Lorem ipsum dolor amet, consecteture adipisong elit, labor
+        </p>
+      </div>
+      <div
+        className="price"
+      >
+        <p
+          className="sc-bZQynM dYPiaP"
+        >
+          $299
+        </p>
+      </div>
+      <div
+        className="image"
+      >
+        <img
+          alt="GoPro"
+          src="https://res.cloudinary.com/decagonbouncer/image/upload/v1575976798/bouncer-frontend/gopro_k0hnnm.png"
+        />
+      </div>
+    </div>
+  </div>
+  <div
     className="sc-bdVaJa bwTILp"
     data-testid="headerId"
   >
