@@ -116,6 +116,35 @@
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
+@-webkit-keyframes smoothShow {
+  from {
+    transform: translateY(20px);
+    opacity:0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+
+@keyframes smoothShow {
+  from {
+    transform: translateY(20px);
+    opacity:0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+
+.smoothShow {
+  -webkit-animation-name: smoothShow;
+  animation-name: smoothShow;
+}
+
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -1607,8 +1636,9 @@
 }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+   -webkit-animation-name: fadeInUp;
+   animation-name: fadeInUp;
+  
 }
 
 @-webkit-keyframes fadeInUpBig {

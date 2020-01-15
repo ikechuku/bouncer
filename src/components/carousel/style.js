@@ -1,6 +1,20 @@
-import Styled from "styled-components";
+import Styled, { keyframes } from "styled-components";
+
+
+const ascend = keyframes`
+  from {
+    transform: translateY(20px);
+    opacity:0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+`;
 
 const Wrapper = Styled.div`
+animation: ${ascend} 2s linear 0s 1;
 .carouselWrapper{
     background-image:linear-gradient(63deg, #ff4858 -25%, #8f65ff 118%);
 }

@@ -34,4 +34,7 @@ export const Label = styled.label`
 
 export const Container = styled.div`
   margin: 20px 0;
+  .eye{
+    cursor: pointer;
+  }
 `;

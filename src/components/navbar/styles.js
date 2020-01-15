@@ -1,6 +1,23 @@
-import Styled from 'styled-components'
+import Styled, { keyframes } from "styled-components";
 import { Link} from 'react-router-dom'
 import theme from '../theme'
+
+const ascend = keyframes`
+  from {
+    transform: translateY(20px);
+    opacity:0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+`;
+
+export const NavbarWrapper = Styled.div`
+  animation: ${ascend} 2s linear 0s 1;
+`;
+
 export const Links = Styled(Link)`
     text-decoration:none;
     background:none;
