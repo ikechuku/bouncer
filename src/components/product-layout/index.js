@@ -42,7 +42,7 @@ let itemChange=value=>{
         paginateBy={paginate}
         displayBy={display}
       />
-      <div className="d-flex justify-content-start flex-wrap mt-2">
+      <div className="d-flex justify-content-center flex-wrap mt-2">
         {items.slice(begin, end).map((element, key) => (
           <Wrapper key={key}>
             {grid ? (
