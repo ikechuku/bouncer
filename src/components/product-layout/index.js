@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import SortFilter from "../sort-filter";
-import items from "./items";
+
 import { BlockThumbNail, InlineThumbNail } from "../thumbnails";
 import { Wrapper } from "./styles";
 import Pagination from "../paginate";
-export default function Layout() {
+
+
+export default function Layout({items=[], ...props}) {
   const [grid, setGrid] = useState(true);
   let display = index => {
     setGrid(!grid);

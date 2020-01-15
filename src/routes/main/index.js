@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Switch } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import theme from "../../components/theme";
+import ProductsGrid from "../../containers/productsGrid";
 const Home = lazy(() => import("../../containers/Home"));
 const Authentication = lazy(() => import("../../containers/Auth"));
 
@@ -15,6 +16,7 @@ const App = () => (
   >
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route exact path="/accessories" component={ProductsGrid} />
       <Route path="/" component={Authentication} /> 
     </Switch>
   </Suspense>
