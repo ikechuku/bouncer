@@ -2,48 +2,52 @@
 
 exports[`renders correctly when called  1`] = `
 <div
-  className="sc-bxivhb gFwdHb"
+  className="vis-hidden"
 >
-  <section
-    className="sc-ifAKCX bJMAHJ"
+  <div
+    className="sc-bxivhb gFwdHb"
   >
-    <div
-      className="sc-EHOje hTTwXQ"
+    <section
+      className="sc-ifAKCX bJMAHJ"
     >
-      <div>
-        <p
-          className="sc-bdVaJa hXIHfI"
-        >
-          iPhone 6 Plus
-        </p>
-      </div>
-      <div>
-        <p
-          className="sc-bdVaJa dAMGmB"
-        >
-          Performance and design. Taken right to the edge.
-        </p>
-      </div>
-      <div>
-        <p
-          className="sc-bdVaJa egjVsa"
-        >
-          <span
-            className="border-1"
+      <div
+        className="sc-EHOje hTTwXQ"
+      >
+        <div>
+          <p
+            className="sc-bdVaJa hXIHfI"
           >
-            SHOP NOW
-          </span>
-        </p>
+            iPhone 6 Plus
+          </p>
+        </div>
+        <div>
+          <p
+            className="sc-bdVaJa dAMGmB"
+          >
+            Performance and design. Taken right to the edge.
+          </p>
+        </div>
+        <div>
+          <p
+            className="sc-bdVaJa egjVsa"
+          >
+            <span
+              className="border-1"
+            >
+              SHOP NOW
+            </span>
+          </p>
+        </div>
       </div>
-    </div>
-    <div
-      className="sc-bZQynM dzMect"
-    >
-      <img
-        alt="Iphone"
-        src="pic.png"
-      />
-    </div>
-  </section>
+      <div
+        className="sc-bZQynM dzMect"
+      >
+        <img
+          alt="Iphone"
+          src="pic.png"
+        />
+      </div>
+    </section>
+  </div>
 </div>
 `;

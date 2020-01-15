@@ -88,5 +88,6 @@ export const Wrapper1 = Styled.div`
 `;
 export const CustomButton = Styled(Button)`
 width:100%
+margin-top: 15px
 
 `;

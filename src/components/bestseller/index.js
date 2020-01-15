@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import InViewMonitor from "react-inview-monitor";
 import Text from "../text";
 import { BestSellerContainer } from "./styles";
 import BlockThumbNail from "../thumbnails/BlockThumbNail";
@@ -50,7 +51,12 @@ const BestSellers = ({ ProductsTypes, Products }) => {
           {bestProducts.length ? (
             [...bestProducts.slice(0, view)].map(item => (
               <div className="m3" key={item.id}>
-                <BlockThumbNail stock={item} />
+                <InViewMonitor
+                  classNameNotInView="vis-hidden"
+                  classNameInView="animated fadeInUp"
+                >
+                  <BlockThumbNail stock={item} />
+                </InViewMonitor>
               </div>
             ))
           ) : (
