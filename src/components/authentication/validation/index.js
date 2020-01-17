@@ -65,3 +65,9 @@ export const vendorValidationSchema = Yup.object({
     .email()
     .required("Required")
 });
+export const resetPasswordValidation = Yup.object({
+  password: Yup.string()
+    .min(6, "Password is too short!")
+    .max(50, "Password is too long!")
+    .required()
+});
