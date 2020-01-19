@@ -1,6 +1,5 @@
 import Styled from "styled-components";
 import Text from "../../components/text"
-import BackgroundColor, { color } from "../../components/color/mixins";
 
 
 export const Link = Styled(Text)`
